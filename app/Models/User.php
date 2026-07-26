@@ -2,15 +2,16 @@
 
 namespace App\Models;
 
-use App\Shared\Concerns\HasUlid;
+use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, HasUlid, Notifiable;
+    use HasApiTokens, HasFactory, HasRoles, HasUlids, Notifiable;
 
     protected $keyType = 'string';
 

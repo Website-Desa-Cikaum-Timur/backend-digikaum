@@ -21,4 +21,21 @@ enum UserRole: string
             self::PpidOfficer->value => 'PPID Officer',
         ];
     }
+
+    public function permissions(): array
+    {
+        return match ($this) {
+            self::SuperAdmin => [],
+            self::EditorKonten => [
+                PermissionName::ViewBerita,
+                PermissionName::CreateBerita,
+                PermissionName::UpdateBerita,
+                PermissionName::DeleteBerita,
+            ],
+            self::PpidOfficer => [
+                PermissionName::ViewPpid,
+                PermissionName::ManagePpid,
+            ],
+        };
+    }
 }
