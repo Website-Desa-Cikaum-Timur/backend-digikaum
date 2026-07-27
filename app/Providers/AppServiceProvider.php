@@ -9,6 +9,8 @@ use App\Repositories\Contracts\PostCategoryRepositoryInterface;
 use App\Repositories\Eloquent\OfficialRepository;
 use App\Repositories\Eloquent\OrganizationRepository;
 use App\Repositories\Eloquent\PostCategoryRepository;
+use App\Repositories\Contracts\PostRepositoryInterface;
+use App\Repositories\Eloquent\PostRepository;
 use App\Shared\Enums\UserRole;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
@@ -31,6 +33,11 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(
             OfficialRepositoryInterface::class,
             OfficialRepository::class
+        );
+
+        $this->app->bind(
+            PostRepositoryInterface::class,
+            PostRepository::class
         );
     }
 

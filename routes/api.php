@@ -3,17 +3,14 @@
 use App\Http\Controllers\Api\OfficialController;
 use App\Http\Controllers\Api\OrganizationController;
 use App\Http\Controllers\Api\PostCategoryController;
+use App\Http\Controllers\Api\PostController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-// Route bawaan untuk cek user aktif (Dipertahankan)
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// ==========================================
-// API VERSION 1
-// ==========================================
 Route::prefix('v1')->group(function () {
 
     // === PUBLIC ROUTES ===
@@ -32,6 +29,12 @@ Route::prefix('v1')->group(function () {
 
     Route::prefix('officials')->group(function () {
         Route::get('/{official}', [OfficialController::class, 'show']);
+    });
+
+    // Modul: Berita Publikasi
+    Route::prefix('posts')->group(function () {
+        Route::get('/', [PostController::class, 'index']);
+        Route::get('/{slug}', [PostController::class, 'show']);
     });
 
     // === PROTECTED ROUTES ===
@@ -56,6 +59,13 @@ Route::prefix('v1')->group(function () {
             Route::post('/', [OfficialController::class, 'store']);
             Route::put('/{official}', [OfficialController::class, 'update']);
             Route::delete('/{official}', [OfficialController::class, 'destroy']);
+        });
+
+        // Modul: Berita Publikasi (CUD)
+        Route::prefix('posts')->group(function () {
+            Route::post('/', [PostController::class, 'store']);
+            Route::put('/{post}', [PostController::class, 'update']);
+            Route::delete('/{post}', [PostController::class, 'destroy']);
         });
 
     });
