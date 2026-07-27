@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use App\Policies\RolePolicy;
+use App\Repositories\Contracts\PostCategoryRepositoryInterface;
+use App\Repositories\Eloquent\PostCategoryRepository;
 use App\Shared\Enums\UserRole;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
@@ -12,7 +14,10 @@ class AppServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        //
+        $this->app->bind(
+            PostCategoryRepositoryInterface::class,
+            PostCategoryRepository::class
+        );
     }
 
     public function boot(): void

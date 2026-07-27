@@ -2,13 +2,18 @@
 
 namespace App\Shared\Contracts;
 
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Collection;
+
 interface RepositoryInterface
 {
-    public function findById(string $id): mixed;
+    public function all(): Collection;
 
-    public function create(array $data): mixed;
+    public function findById(string $id): ?Model;
 
-    public function update(string $id, array $data): mixed;
+    public function create(array $data): Model;
+
+    public function update(string $id, array $data): bool;
 
     public function delete(string $id): bool;
 }
