@@ -38,7 +38,7 @@ class PostController extends Controller
         return response()->json([
             'success' => true,
             'message' => 'Berita berhasil diterbitkan',
-            'data' => new PostResource($post)
+            'data' => new PostResource($post),
         ], 201);
     }
 
@@ -46,7 +46,7 @@ class PostController extends Controller
     {
         $post = $this->repository->findPublishedBySlug($slug);
 
-        if (!$post) {
+        if (! $post) {
             return response()->json([
                 'success' => false,
                 'message' => 'Berita tidak ditemukan atau belum rilis',
@@ -58,7 +58,7 @@ class PostController extends Controller
         return response()->json([
             'success' => true,
             'message' => 'Detail berita berhasil diambil',
-            'data' => new PostResource($post)
+            'data' => new PostResource($post),
         ]);
     }
 
@@ -67,10 +67,10 @@ class PostController extends Controller
         $coverImage = $request->file('cover_image');
         $updated = $this->postService->updatePost($id, $request->validated(), $coverImage);
 
-        if (!$updated) {
+        if (! $updated) {
             return response()->json([
                 'success' => false,
-                'message' => 'Berita gagal diperbarui atau tidak ditemukan'
+                'message' => 'Berita gagal diperbarui atau tidak ditemukan',
             ], 404);
         }
 
@@ -80,7 +80,7 @@ class PostController extends Controller
         return response()->json([
             'success' => true,
             'message' => 'Berita berhasil diperbarui',
-            'data' => new PostResource($post)
+            'data' => new PostResource($post),
         ]);
     }
 
@@ -88,16 +88,16 @@ class PostController extends Controller
     {
         $deleted = $this->postService->deletePost($id);
 
-        if (!$deleted) {
+        if (! $deleted) {
             return response()->json([
                 'success' => false,
-                'message' => 'Berita gagal dihapus atau tidak ditemukan'
+                'message' => 'Berita gagal dihapus atau tidak ditemukan',
             ], 404);
         }
 
         return response()->json([
             'success' => true,
-            'message' => 'Berita dan gambar cover berhasil dihapus'
+            'message' => 'Berita dan gambar cover berhasil dihapus',
         ]);
     }
 }

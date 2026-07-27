@@ -11,15 +11,15 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->ulid('id')->primary();
             $table->foreignUlid('author_id')
-                  ->constrained('users')
-                  ->cascadeOnDelete();
+                ->constrained('users')
+                ->cascadeOnDelete();
             $table->foreignUlid('post_category_id')
-                  ->constrained('post_categories')
-                  ->restrictOnDelete();
+                ->constrained('post_categories')
+                ->restrictOnDelete();
             $table->string('title');
             $table->string('slug')->unique();
             $table->text('excerpt')->nullable();
-            $table->longText('content'); 
+            $table->longText('content');
             $table->enum('status', ['draft', 'published', 'archived'])->default('draft');
             $table->boolean('is_highlight')->default(false);
             $table->unsignedInteger('views_count')->default(0);

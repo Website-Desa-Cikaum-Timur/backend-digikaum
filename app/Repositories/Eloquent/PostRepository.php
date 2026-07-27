@@ -17,8 +17,8 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
     {
         $query = $this->model->published()
             ->with([
-                'category:id,name,slug', 
-                'author:id,name' 
+                'category:id,name,slug',
+                'author:id,name',
             ])
             ->latest('published_at');
 
@@ -35,8 +35,8 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
     {
         return $this->model->published()
             ->with([
-                'category:id,name,slug', 
-                'author:id,name'
+                'category:id,name,slug',
+                'author:id,name',
             ])
             ->where('slug', $slug)
             ->first();

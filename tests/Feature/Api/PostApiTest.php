@@ -7,7 +7,7 @@ use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
 
 beforeEach(function () {
-    Storage::fake('public'); 
+    Storage::fake('public');
 });
 
 it('can fetch paginated published posts', function () {
@@ -24,7 +24,7 @@ it('can fetch paginated published posts', function () {
 it('can create a post with cover image', function () {
     $user = User::factory()->create();
     $category = PostCategory::factory()->create();
-    
+
     $fakeImage = UploadedFile::fake()->image('cover.jpg');
 
     $response = $this->actingAs($user)->postJson('/api/v1/posts', [

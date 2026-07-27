@@ -14,14 +14,14 @@ class PostResource extends JsonResource
             'title' => $this->title,
             'slug' => $this->slug,
             'excerpt' => $this->excerpt,
-            'content' => $this->when(!$request->routeIs('*.index'), $this->content),
+            'content' => $this->when(! $request->routeIs('*.index'), $this->content),
             'status' => $this->status,
             'is_highlight' => $this->is_highlight,
             'views_count' => $this->views_count,
             'published_at' => $this->published_at ? $this->published_at->toIso8601String() : null,
-            
+
             'cover_image_url' => $this->getFirstMediaUrl('post_covers') ?: null,
-            
+
             'category' => $this->whenLoaded('category', function () {
                 return [
                     'id' => $this->category->id,
@@ -35,7 +35,7 @@ class PostResource extends JsonResource
                     'name' => $this->author->name,
                 ];
             }),
-            
+
             'created_at' => $this->created_at->toIso8601String(),
         ];
     }

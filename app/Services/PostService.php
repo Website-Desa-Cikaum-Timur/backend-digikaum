@@ -6,7 +6,6 @@ use App\Repositories\Contracts\PostRepositoryInterface;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
-use Exception;
 
 class PostService
 {
@@ -42,7 +41,7 @@ class PostService
 
             if ($updated && $coverImage) {
                 $post = $this->repository->findById($id);
-                
+
                 $post->clearMediaCollection('post_covers');
                 $post->addMedia($coverImage)->toMediaCollection('post_covers');
             }

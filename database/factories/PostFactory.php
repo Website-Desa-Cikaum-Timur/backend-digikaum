@@ -15,6 +15,7 @@ class PostFactory extends Factory
     public function definition(): array
     {
         $title = $this->faker->sentence();
+
         return [
             'author_id' => clone User::factory(),
             'post_category_id' => clone PostCategory::factory(),

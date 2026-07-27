@@ -20,17 +20,17 @@ class UpdatePostRequest extends FormRequest
             'post_category_id' => ['sometimes', 'required', 'string', 'exists:post_categories,id'],
             'title' => ['sometimes', 'required', 'string', 'max:255'],
             'slug' => [
-                'nullable', 
-                'string', 
-                'max:255', 
-                Rule::unique('posts', 'slug')->ignore($postId)
+                'nullable',
+                'string',
+                'max:255',
+                Rule::unique('posts', 'slug')->ignore($postId),
             ],
             'excerpt' => ['nullable', 'string', 'max:500'],
             'content' => ['sometimes', 'required', 'string'],
             'status' => ['nullable', 'in:draft,published,archived'],
             'is_highlight' => ['nullable', 'boolean'],
             'published_at' => ['nullable', 'date'],
-            
+
             'cover_image' => ['nullable', 'image', 'mimes:jpeg,png,jpg,webp', 'max:2048'],
         ];
     }

@@ -15,6 +15,7 @@ class Post extends Model implements HasMedia
     use HasFactory, HasUlid, InteractsWithMedia;
 
     public $incrementing = false;
+
     protected $keyType = 'string';
 
     protected $fillable = [
@@ -49,6 +50,6 @@ class Post extends Model implements HasMedia
     public function scopePublished(Builder $query): Builder
     {
         return $query->where('status', 'published')
-                     ->where('published_at', '<=', now());
+            ->where('published_at', '<=', now());
     }
 }
