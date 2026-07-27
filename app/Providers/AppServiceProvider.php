@@ -3,7 +3,11 @@
 namespace App\Providers;
 
 use App\Policies\RolePolicy;
+use App\Repositories\Contracts\OfficialRepositoryInterface;
+use App\Repositories\Contracts\OrganizationRepositoryInterface;
 use App\Repositories\Contracts\PostCategoryRepositoryInterface;
+use App\Repositories\Eloquent\OfficialRepository;
+use App\Repositories\Eloquent\OrganizationRepository;
 use App\Repositories\Eloquent\PostCategoryRepository;
 use App\Shared\Enums\UserRole;
 use Illuminate\Support\Facades\Gate;
@@ -17,6 +21,16 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(
             PostCategoryRepositoryInterface::class,
             PostCategoryRepository::class
+        );
+
+        $this->app->bind(
+            OrganizationRepositoryInterface::class,
+            OrganizationRepository::class
+        );
+
+        $this->app->bind(
+            OfficialRepositoryInterface::class,
+            OfficialRepository::class
         );
     }
 

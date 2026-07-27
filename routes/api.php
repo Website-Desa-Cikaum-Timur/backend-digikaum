@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Api\OfficialController;
+use App\Http\Controllers\Api\OrganizationController;
 use App\Http\Controllers\Api\PostCategoryController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -14,13 +16,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 // ==========================================
 Route::prefix('v1')->group(function () {
 
-    /*
-    |--------------------------------------------------------------------------
-    | PUBLIC ROUTES
-    |--------------------------------------------------------------------------
-    | Endpoint yang dapat diakses bebas tanpa token login.
-    | Digunakan oleh Frontend React untuk konsumsi publik (Warga).
-    */
+    // === PUBLIC ROUTES ===
 
     // Modul: Kategori
     Route::prefix('categories')->group(function () {
@@ -28,25 +24,39 @@ Route::prefix('v1')->group(function () {
         Route::get('/{category}', [PostCategoryController::class, 'show']);
     });
 
-    // TODO: Modul Publik Lainnya (Berita, Profil Desa, WebGIS) akan diletakkan di sini
+    // Modul: SOTK
+    Route::prefix('organizations')->group(function () {
+        Route::get('/', [OrganizationController::class, 'index']);
+        Route::get('/{organization}', [OrganizationController::class, 'show']);
+    });
 
-    /*
-    |--------------------------------------------------------------------------
-    | PROTECTED ROUTES
-    |--------------------------------------------------------------------------
-    | Endpoint yang WAJIB menyertakan Bearer Token (Sanctum).
-    | Digunakan oleh Filament Panel / Admin React (Perangkat Desa).
-    */
+    Route::prefix('officials')->group(function () {
+        Route::get('/{official}', [OfficialController::class, 'show']);
+    });
+
+    // === PROTECTED ROUTES ===
     Route::middleware('auth:sanctum')->group(function () {
 
-        // Modul: Kategori (CUD Operations)
+        // Modul: Kategori (CUD)
         Route::prefix('categories')->group(function () {
             Route::post('/', [PostCategoryController::class, 'store']);
             Route::put('/{category}', [PostCategoryController::class, 'update']);
             Route::delete('/{category}', [PostCategoryController::class, 'destroy']);
         });
 
-        // TODO: Modul SOTK, UMKM, Pengaduan, dll yang butuh autentikasi akan diletakkan di sini
+        // Modul: SOTK - Organisasi (CUD)
+        Route::prefix('organizations')->group(function () {
+            Route::post('/', [OrganizationController::class, 'store']);
+            Route::put('/{organization}', [OrganizationController::class, 'update']);
+            Route::delete('/{organization}', [OrganizationController::class, 'destroy']);
+        });
+
+        // Modul: SOTK - Pejabat (CUD)
+        Route::prefix('officials')->group(function () {
+            Route::post('/', [OfficialController::class, 'store']);
+            Route::put('/{official}', [OfficialController::class, 'update']);
+            Route::delete('/{official}', [OfficialController::class, 'destroy']);
+        });
 
     });
 
