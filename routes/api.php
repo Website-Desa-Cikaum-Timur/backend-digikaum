@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\ComplaintController;
 use App\Http\Controllers\Api\LocationController;
 use App\Http\Controllers\Api\OfficialController;
 use App\Http\Controllers\Api\OrganizationController;
@@ -44,6 +45,12 @@ Route::prefix('v1')->group(function () {
         Route::get('/{slug}', [LocationController::class, 'show']);
     });
 
+    // Modul: Pengaduan Masyarakat (Admin)
+    Route::prefix('complaints')->group(function () {
+        Route::post('/', [ComplaintController::class, 'store']);
+        Route::get('/track/{trackingCode}', [ComplaintController::class, 'track']);
+    });
+
     // === PROTECTED ROUTES ===
     Route::middleware('auth:sanctum')->group(function () {
 
@@ -80,6 +87,12 @@ Route::prefix('v1')->group(function () {
             Route::post('/', [LocationController::class, 'store']);
             Route::put('/{location}', [LocationController::class, 'update']);
             Route::delete('/{location}', [LocationController::class, 'destroy']);
+        });
+
+        // Modul: Pengaduan Masyarakat (Admin)
+        Route::prefix('complaints')->group(function () {
+            Route::get('/', [ComplaintController::class, 'index']); // Lihat Semua Aduan
+            Route::patch('/{complaint}/status', [ComplaintController::class, 'updateStatus']); // Update Status
         });
 
     });

@@ -3,11 +3,13 @@
 namespace App\Providers;
 
 use App\Policies\RolePolicy;
+use App\Repositories\Contracts\ComplaintRepositoryInterface;
 use App\Repositories\Contracts\LocationRepositoryInterface;
 use App\Repositories\Contracts\OfficialRepositoryInterface;
 use App\Repositories\Contracts\OrganizationRepositoryInterface;
 use App\Repositories\Contracts\PostCategoryRepositoryInterface;
 use App\Repositories\Contracts\PostRepositoryInterface;
+use App\Repositories\Eloquent\ComplaintRepository;
 use App\Repositories\Eloquent\LocationRepository;
 use App\Repositories\Eloquent\OfficialRepository;
 use App\Repositories\Eloquent\OrganizationRepository;
@@ -45,6 +47,11 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(
             LocationRepositoryInterface::class,
             LocationRepository::class
+        );
+
+        $this->app->bind(
+            ComplaintRepositoryInterface::class,
+            ComplaintRepository::class
         );
     }
 
