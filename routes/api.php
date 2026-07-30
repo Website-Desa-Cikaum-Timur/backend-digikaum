@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\LocationController;
 use App\Http\Controllers\Api\OfficialController;
 use App\Http\Controllers\Api\OrganizationController;
 use App\Http\Controllers\Api\PostCategoryController;
@@ -37,6 +38,12 @@ Route::prefix('v1')->group(function () {
         Route::get('/{slug}', [PostController::class, 'show']);
     });
 
+    // Modul: WebGIS (Titik Lokasi)
+    Route::prefix('locations')->group(function () {
+        Route::get('/', [LocationController::class, 'index']);
+        Route::get('/{slug}', [LocationController::class, 'show']);
+    });
+
     // === PROTECTED ROUTES ===
     Route::middleware('auth:sanctum')->group(function () {
 
@@ -66,6 +73,13 @@ Route::prefix('v1')->group(function () {
             Route::post('/', [PostController::class, 'store']);
             Route::put('/{post}', [PostController::class, 'update']);
             Route::delete('/{post}', [PostController::class, 'destroy']);
+        });
+
+        // Modul: WebGIS (CUD)
+        Route::prefix('locations')->group(function () {
+            Route::post('/', [LocationController::class, 'store']);
+            Route::put('/{location}', [LocationController::class, 'update']);
+            Route::delete('/{location}', [LocationController::class, 'destroy']);
         });
 
     });
