@@ -4,17 +4,21 @@ namespace App\Providers;
 
 use App\Policies\RolePolicy;
 use App\Repositories\Contracts\ComplaintRepositoryInterface;
+use App\Repositories\Contracts\FamilyRepositoryInterface;
 use App\Repositories\Contracts\LocationRepositoryInterface;
 use App\Repositories\Contracts\OfficialRepositoryInterface;
 use App\Repositories\Contracts\OrganizationRepositoryInterface;
 use App\Repositories\Contracts\PostCategoryRepositoryInterface;
 use App\Repositories\Contracts\PostRepositoryInterface;
+use App\Repositories\Contracts\ResidentRepositoryInterface;
 use App\Repositories\Eloquent\ComplaintRepository;
+use App\Repositories\Eloquent\FamilyRepository;
 use App\Repositories\Eloquent\LocationRepository;
 use App\Repositories\Eloquent\OfficialRepository;
 use App\Repositories\Eloquent\OrganizationRepository;
 use App\Repositories\Eloquent\PostCategoryRepository;
 use App\Repositories\Eloquent\PostRepository;
+use App\Repositories\Eloquent\ResidentRepository;
 use App\Shared\Enums\UserRole;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
@@ -52,6 +56,16 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(
             ComplaintRepositoryInterface::class,
             ComplaintRepository::class
+        );
+
+        $this->app->bind(
+            FamilyRepositoryInterface::class,
+            FamilyRepository::class
+        );
+
+        $this->app->bind(
+            ResidentRepositoryInterface::class,
+            ResidentRepository::class
         );
     }
 

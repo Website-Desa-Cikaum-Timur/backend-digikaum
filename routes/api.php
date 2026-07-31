@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\ComplaintController;
+use App\Http\Controllers\Api\DemographicController;
 use App\Http\Controllers\Api\LocationController;
 use App\Http\Controllers\Api\OfficialController;
 use App\Http\Controllers\Api\OrganizationController;
@@ -51,6 +52,11 @@ Route::prefix('v1')->group(function () {
         Route::get('/track/{trackingCode}', [ComplaintController::class, 'track']);
     });
 
+    // Modul: Sensus Kependudukan (Publik - Terbatas)
+    Route::prefix('demographics')->group(function () {
+        Route::get('/families/{family}', [DemographicController::class, 'show']);
+    });
+
     // === PROTECTED ROUTES ===
     Route::middleware('auth:sanctum')->group(function () {
 
@@ -93,6 +99,11 @@ Route::prefix('v1')->group(function () {
         Route::prefix('complaints')->group(function () {
             Route::get('/', [ComplaintController::class, 'index']); // Lihat Semua Aduan
             Route::patch('/{complaint}/status', [ComplaintController::class, 'updateStatus']); // Update Status
+        });
+
+        // Modul: Sensus Kependudukan (Admin Sensus)
+        Route::prefix('demographics')->group(function () {
+            Route::post('/families', [DemographicController::class, 'store']);
         });
 
     });
