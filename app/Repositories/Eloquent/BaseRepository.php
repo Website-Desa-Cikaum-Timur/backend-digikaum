@@ -3,6 +3,7 @@
 namespace App\Repositories\Eloquent;
 
 use App\Shared\Contracts\RepositoryInterface;
+use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 
@@ -18,6 +19,11 @@ abstract class BaseRepository implements RepositoryInterface
     public function all(): Collection
     {
         return $this->model->all();
+    }
+
+    public function paginate(int $perPage = 15): LengthAwarePaginator
+    {
+        return $this->model->paginate($perPage);
     }
 
     public function findById(string $id): ?Model

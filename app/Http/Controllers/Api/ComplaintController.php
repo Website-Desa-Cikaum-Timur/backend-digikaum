@@ -10,22 +10,20 @@ use App\Repositories\Contracts\ComplaintRepositoryInterface;
 use App\Services\ComplaintService;
 use App\Shared\Enums\ComplaintStatus;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 
 class ComplaintController extends Controller
 {
     public function __construct(
-        private ComplaintService $complaintService,
-        private ComplaintRepositoryInterface $repository
+        private readonly ComplaintService $complaintService,
+        private readonly ComplaintRepositoryInterface $repository
     ) {}
 
-    public function index(): JsonResponse
+    public function index(): AnonymousResourceCollection
     {
-        $complaints = $this->repository->all();
+        $complaints = $this->repository->paginate(15);
 
-        return response()->json([
-            'success' => true,
-            'data' => ComplaintResource::collection($complaints),
-        ]);
+        return ComplaintResource::collection($complaints);
     }
 
     public function store(StoreComplaintRequest $request): JsonResponse
