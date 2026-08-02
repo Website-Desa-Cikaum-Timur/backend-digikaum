@@ -20,23 +20,18 @@ class ShieldSeeder extends Seeder
         $rolesWithPermissions = '[]';
         $directPermissions = '[{"name":"ViewAny:Role","guard_name":"web"},{"name":"View:Role","guard_name":"web"},{"name":"Create:Role","guard_name":"web"},{"name":"Update:Role","guard_name":"web"},{"name":"Delete:Role","guard_name":"web"},{"name":"DeleteAny:Role","guard_name":"web"},{"name":"Restore:Role","guard_name":"web"},{"name":"ForceDelete:Role","guard_name":"web"},{"name":"ForceDeleteAny:Role","guard_name":"web"},{"name":"RestoreAny:Role","guard_name":"web"},{"name":"Replicate:Role","guard_name":"web"},{"name":"Reorder:Role","guard_name":"web"}]';
 
-        // 1. Seed tenants first (if present)
         if (! blank($tenants) && $tenants !== '[]') {
             static::seedTenants($tenants);
         }
 
-        // 2. Seed roles with permissions
         static::makeRolesWithPermissions($rolesWithPermissions);
 
-        // 3. Seed direct permissions
         static::makeDirectPermissions($directPermissions);
 
-        // 4. Seed users with their roles/permissions (if present)
         if (! blank($users) && $users !== '[]') {
             static::seedUsers($users);
         }
 
-        // 5. Seed user-tenant pivot (if present)
         if (! blank($userTenantPivot) && $userTenantPivot !== '[]') {
             static::seedUserTenantPivot($userTenantPivot);
         }
@@ -73,7 +68,6 @@ class ShieldSeeder extends Seeder
         $tenancyEnabled = false;
 
         foreach ($userData as $data) {
-            // Extract role/permission data before creating user
             $roles = $data['roles'] ?? [];
             $permissions = $data['permissions'] ?? [];
             $tenantRoles = $data['tenant_roles'] ?? [];
@@ -85,7 +79,6 @@ class ShieldSeeder extends Seeder
                 $data
             );
 
-            // Handle tenancy mode - sync roles/permissions per tenant
             if ($tenancyEnabled && (! empty($tenantRoles) || ! empty($tenantPermissions))) {
                 foreach ($tenantRoles as $tenantId => $roleNames) {
                     $contextId = $tenantId === '_global' ? null : $tenantId;
@@ -157,7 +150,6 @@ class ShieldSeeder extends Seeder
         foreach ($rolePlusPermissions as $rolePlusPermission) {
             $tenantId = $rolePlusPermission[$teamForeignKey] ?? null;
 
-            // Set tenant context for role creation and permission sync
             if ($tenancyEnabled) {
                 setPermissionsTeamId($tenantId);
             }
@@ -167,7 +159,6 @@ class ShieldSeeder extends Seeder
                 'guard_name' => $rolePlusPermission['guard_name'],
             ];
 
-            // Include tenant ID in role data (can be null for global roles)
             if ($tenancyEnabled && ! blank($teamForeignKey)) {
                 $roleData[$teamForeignKey] = $tenantId;
             }

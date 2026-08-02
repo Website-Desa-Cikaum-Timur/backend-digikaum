@@ -15,6 +15,11 @@ enum PermissionName: string
     case ManageUsers = 'manage users';
     case ManageRoles = 'manage roles';
 
+    public static function values(): array
+    {
+        return array_column(self::cases(), 'value');
+    }
+
     public function label(): string
     {
         return match ($this) {
