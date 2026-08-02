@@ -2,6 +2,10 @@
 
 namespace App\Providers;
 
+use App\Models\Official;
+use App\Models\Organization;
+use App\Observers\OfficialObserver;
+use App\Observers\OrganizationObserver;
 use App\Policies\RolePolicy;
 use App\Repositories\Contracts\ComplaintRepositoryInterface;
 use App\Repositories\Contracts\FamilyRepositoryInterface;
@@ -76,5 +80,8 @@ class AppServiceProvider extends ServiceProvider
         });
 
         Gate::policy(Role::class, RolePolicy::class);
+
+        Organization::observe(OrganizationObserver::class);
+        Official::observe(OfficialObserver::class);
     }
 }
