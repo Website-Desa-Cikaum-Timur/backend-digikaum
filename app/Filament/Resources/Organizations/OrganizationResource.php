@@ -21,7 +21,7 @@ class OrganizationResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-building-office-2';
 
-    protected static ?string $recordTitleAttribute = 'name';
+    protected static ?string $recordTitleAttribute = 'Organization';
 
     protected static ?string $modelLabel = 'Struktur Organisasi';
 

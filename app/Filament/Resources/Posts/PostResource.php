@@ -20,7 +20,7 @@ class PostResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-document-text';
 
-    protected static ?string $recordTitleAttribute = 'title';
+    protected static ?string $recordTitleAttribute = 'Post';
 
     protected static ?string $modelLabel = 'Publikasi Berita';
 
