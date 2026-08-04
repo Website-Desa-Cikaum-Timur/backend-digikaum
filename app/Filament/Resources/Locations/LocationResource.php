@@ -8,6 +8,7 @@ use App\Filament\Resources\Locations\Pages\ListLocations;
 use App\Filament\Resources\Locations\Schemas\LocationForm;
 use App\Filament\Resources\Locations\Tables\LocationsTable;
 use App\Models\Location;
+use App\Shared\Enums\UserRole;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
@@ -56,5 +57,10 @@ class LocationResource extends Resource
             'create' => CreateLocation::route('/create'),
             'edit' => EditLocation::route('/{record}/edit'),
         ];
+    }
+
+    public static function canViewAny(): bool
+    {
+        return auth()->user()->hasRole(UserRole::SuperAdmin->value);
     }
 }

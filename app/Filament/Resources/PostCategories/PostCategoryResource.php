@@ -8,6 +8,7 @@ use App\Filament\Resources\PostCategories\Pages\ListPostCategories;
 use App\Filament\Resources\PostCategories\Schemas\PostCategoryForm;
 use App\Filament\Resources\PostCategories\Tables\PostCategoriesTable;
 use App\Models\PostCategory;
+use App\Shared\Enums\PermissionName;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
@@ -56,5 +57,10 @@ class PostCategoryResource extends Resource
             'create' => CreatePostCategory::route('/create'),
             'edit' => EditPostCategory::route('/{record}/edit'),
         ];
+    }
+
+    public static function canViewAny(): bool
+    {
+        return auth()->user()->can(PermissionName::ViewBerita->value);
     }
 }

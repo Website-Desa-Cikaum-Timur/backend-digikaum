@@ -9,6 +9,7 @@ use App\Filament\Resources\Organizations\RelationManagers\OfficialsRelationManag
 use App\Filament\Resources\Organizations\Schemas\OrganizationForm;
 use App\Filament\Resources\Organizations\Tables\OrganizationsTable;
 use App\Models\Organization;
+use App\Shared\Enums\UserRole;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
@@ -57,5 +58,10 @@ class OrganizationResource extends Resource
             'create' => CreateOrganization::route('/create'),
             'edit' => EditOrganization::route('/{record}/edit'),
         ];
+    }
+
+    public static function canViewAny(): bool
+    {
+        return auth()->user()->hasRole(UserRole::SuperAdmin->value);
     }
 }

@@ -8,6 +8,7 @@ use App\Filament\Resources\Families\Pages\ListFamilies;
 use App\Filament\Resources\Families\Schemas\FamilyForm;
 use App\Filament\Resources\Families\Tables\FamiliesTable;
 use App\Models\Family;
+use App\Shared\Enums\UserRole;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
@@ -66,5 +67,10 @@ class FamilyResource extends Resource
             ->withoutGlobalScopes([
                 SoftDeletingScope::class,
             ]);
+    }
+
+    public static function canViewAny(): bool
+    {
+        return auth()->user()->hasRole(UserRole::SuperAdmin->value);
     }
 }

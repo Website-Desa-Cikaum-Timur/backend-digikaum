@@ -8,6 +8,7 @@ use App\Filament\Resources\Complaints\Pages\ListComplaints;
 use App\Filament\Resources\Complaints\Schemas\ComplaintForm;
 use App\Filament\Resources\Complaints\Tables\ComplaintsTable;
 use App\Models\Complaint;
+use App\Shared\Enums\PermissionName;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
@@ -66,5 +67,10 @@ class ComplaintResource extends Resource
             ->withoutGlobalScopes([
                 SoftDeletingScope::class,
             ]);
+    }
+
+    public static function canViewAny(): bool
+    {
+        return auth()->user()->can(PermissionName::ViewPpid->value);
     }
 }

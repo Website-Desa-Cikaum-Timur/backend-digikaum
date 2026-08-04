@@ -46,5 +46,16 @@ class DatabaseSeeder extends Seeder
             ]
         );
         $ppidOfficer->syncRoles([UserRole::PpidOfficer->value]);
+
+        if (app()->environment('local', 'testing', 'staging')) {
+            $this->command->warn('Menjalankan Factory Dummy Data untuk Environment: ' . app()->environment());
+
+            $this->call([
+                DemographicSeeder::class,
+                VillageDataSeeder::class,
+            ]);
+        } else {
+            $this->command->info('Environment PRODUCTION terdeteksi. Dummy data dilewati demi keamanan.');
+        }
     }
 }
