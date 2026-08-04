@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
+use Illuminate\Support\Facades\Cache;
 
 class Resident extends Model implements HasMedia
 {
@@ -48,5 +49,18 @@ class Resident extends Model implements HasMedia
     public function family(): BelongsTo
     {
         return $this->belongsTo(Family::class);
+    }
+
+    protected static function booted(): void
+    {
+        $clearCache = function () {
+            Cache::forget('demographic_stats');
+            Cache::forget('dashboard_total_residents');
+        };
+
+        static::created($clearCache);
+        static::updated($clearCache);
+        static::deleted($clearCache);
+        static::restored($clearCache);
     }
 }

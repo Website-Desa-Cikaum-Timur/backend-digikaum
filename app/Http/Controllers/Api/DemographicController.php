@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreFamilyRequest;
 use App\Http\Resources\Api\FamilyResource;
 use App\Repositories\Contracts\FamilyRepositoryInterface;
+use App\Repositories\Contracts\ResidentRepositoryInterface;
 use App\Services\DemographicService;
 use App\Shared\Exceptions\DomainException;
 use Illuminate\Http\JsonResponse;
@@ -15,8 +16,20 @@ class DemographicController extends Controller
 {
     public function __construct(
         private DemographicService $demographicService,
-        private FamilyRepositoryInterface $familyRepository
+        private FamilyRepositoryInterface $familyRepository,
+        private ResidentRepositoryInterface $residentRepository
     ) {}
+
+    public function stats(): JsonResponse
+    {
+        $stats = $this->residentRepository->getDemographicStats();
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Statistik demografi berhasil diambil.',
+            'data' => $stats,
+        ]);
+    }
 
     public function store(StoreFamilyRequest $request): JsonResponse
     {

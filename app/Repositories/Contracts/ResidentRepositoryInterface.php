@@ -10,4 +10,6 @@ interface ResidentRepositoryInterface extends RepositoryInterface
     public function findByNik(string $nik): ?Model;
 
     public function isNikExists(string $nik): bool;
+
+    public function getDemographicStats(): array;
 }

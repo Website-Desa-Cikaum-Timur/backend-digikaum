@@ -54,6 +54,7 @@ Route::prefix('v1')->group(function () {
 
     // Modul: Sensus Kependudukan (Publik - Terbatas)
     Route::prefix('demographics')->group(function () {
+        Route::get('/stats', [DemographicController::class, 'stats']);
         Route::get('/families/{family}', [DemographicController::class, 'show']);
     });
 
