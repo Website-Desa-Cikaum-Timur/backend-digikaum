@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Shared\Concerns\HasUlid;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class PostCategory extends Model
 {
@@ -24,4 +25,9 @@ class PostCategory extends Model
     protected $casts = [
         'is_active' => 'boolean',
     ];
+
+    public function posts(): HasMany
+    {
+        return $this->hasMany(Post::class, 'post_category_id');
+    }
 }

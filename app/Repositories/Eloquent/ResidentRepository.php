@@ -4,9 +4,9 @@ namespace App\Repositories\Eloquent;
 
 use App\Models\Resident;
 use App\Repositories\Contracts\ResidentRepositoryInterface;
+use App\Shared\Enums\GenderType;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Cache;
-use App\Shared\Enums\GenderType;
 
 class ResidentRepository extends BaseRepository implements ResidentRepositoryInterface
 {
