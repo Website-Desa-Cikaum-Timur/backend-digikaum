@@ -19,7 +19,10 @@ class OfficialController extends Controller
 
     public function store(StoreOfficialRequest $request): JsonResponse
     {
-        $official = $this->officialService->createOfficial($request->validated());
+        $official = $this->officialService->createOfficial(
+            $request->validated(),
+            $request->file('photo')
+        );
 
         return response()->json([
             'success' => true,
@@ -48,7 +51,11 @@ class OfficialController extends Controller
 
     public function update(UpdateOfficialRequest $request, string $id): JsonResponse
     {
-        $updated = $this->officialService->updateOfficial($id, $request->validated());
+        $updated = $this->officialService->updateOfficial(
+            $id,
+            $request->validated(),
+            $request->file('photo')
+        );
 
         if (! $updated) {
             return response()->json([

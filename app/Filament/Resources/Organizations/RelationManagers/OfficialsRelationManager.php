@@ -7,12 +7,14 @@ use Filament\Actions\CreateAction;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Schemas\Schema;
 use Filament\Tables;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\Facades\Cache;
 
@@ -26,26 +28,29 @@ class OfficialsRelationManager extends RelationManager
     {
         return $schema
             ->components([
+                SpatieMediaLibraryFileUpload::make('photo')
+                    ->label('Foto Pejabat')
+                    ->collection('official_photos')
+                    ->image()
+                    ->imageEditor()
+                    ->avatar()
+                    ->columnSpanFull(),
                 TextInput::make('name')
                     ->label('Nama Lengkap (beserta Gelar)')
                     ->required()
                     ->maxLength(255),
-
                 TextInput::make('position')
                     ->label('Jabatan')
                     ->placeholder('Contoh: Kepala Desa, Sekretaris')
                     ->required()
                     ->maxLength(255),
-
                 TextInput::make('nip_nik')
                     ->label('NIP / NIK')
                     ->maxLength(255)
                     ->helperText('Opsional. Biarkan kosong jika tidak memiliki NIP.'),
-
                 Toggle::make('is_active')
                     ->label('Status Menjabat')
                     ->default(true),
-
                 Textarea::make('bio')
                     ->label('Biografi Singkat')
                     ->maxLength(500)
@@ -59,6 +64,10 @@ class OfficialsRelationManager extends RelationManager
             ->reorderable('sort_order')
             ->recordTitleAttribute('name')
             ->columns([
+                SpatieMediaLibraryImageColumn::make('photo')
+                    ->label('Foto')
+                    ->collection('official_photos')
+                    ->circular(),
                 Tables\Columns\TextColumn::make('name')
                     ->label('Nama Pejabat')
                     ->searchable()

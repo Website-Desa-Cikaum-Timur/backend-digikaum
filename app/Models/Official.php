@@ -6,10 +6,12 @@ use App\Shared\Concerns\HasUlid;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 
-class Official extends Model
+class Official extends Model implements HasMedia
 {
-    use HasFactory, HasUlid;
+    use HasFactory, HasUlid, InteractsWithMedia;
 
     public $incrementing = false;
 

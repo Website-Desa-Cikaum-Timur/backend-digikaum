@@ -3,7 +3,9 @@
 namespace App\Services;
 
 use App\Repositories\Contracts\OfficialRepositoryInterface;
+use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\DB;
 
 class OfficialService
 {
@@ -11,23 +13,38 @@ class OfficialService
         private OfficialRepositoryInterface $repository
     ) {}
 
-    public function createOfficial(array $data)
+    public function createOfficial(array $data, ?UploadedFile $photo = null)
     {
-        $official = $this->repository->create($data);
-        $this->clearSotkCache();
+        return DB::transaction(function () use ($data, $photo) {
+            $official = $this->repository->create($data);
 
-        return $official;
+            if ($photo) {
+                $official->addMedia($photo)->toMediaCollection('official_photos');
+            }
+
+            $this->clearSotkCache();
+
+            return $official;
+        });
     }
 
-    public function updateOfficial(string $id, array $data): bool
+    public function updateOfficial(string $id, array $data, ?UploadedFile $photo = null): bool
     {
-        $updated = $this->repository->update($id, $data);
+        return DB::transaction(function () use ($id, $data, $photo) {
+            $updated = $this->repository->update($id, $data);
 
-        if ($updated) {
-            $this->clearSotkCache();
-        }
+            if ($updated && $photo) {
+                $official = $this->repository->findById($id);
+                $official->clearMediaCollection('official_photos');
+                $official->addMedia($photo)->toMediaCollection('official_photos');
+            }
 
-        return $updated;
+            if ($updated) {
+                $this->clearSotkCache();
+            }
+
+            return $updated;
+        });
     }
 
     public function deleteOfficial(string $id): bool

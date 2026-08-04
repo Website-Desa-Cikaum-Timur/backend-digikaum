@@ -18,6 +18,7 @@ class OfficialResource extends JsonResource
             'bio' => $this->bio,
             'sort_order' => $this->sort_order,
             'is_active' => $this->is_active,
+            'photo_url' => $this->getFirstMediaUrl('official_photos') ?: null,
             'created_at' => $this->created_at->toIso8601String(),
         ];
     }
