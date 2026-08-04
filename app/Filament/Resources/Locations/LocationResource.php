@@ -26,9 +26,9 @@ class LocationResource extends Resource
 
     protected static ?string $pluralModelLabel = 'Titik Lokasi Pemetaan';
 
-    protected static ?string $navigationLabel = 'Pemetaan (WebGIS)';
+    protected static ?string $navigationLabel = 'Peta Desa';
 
-    protected static string|UnitEnum|null $navigationGroup = 'Sistem Spasial (WebGIS)';
+    protected static string|UnitEnum|null $navigationGroup = 'Fasilitas & Pemetaan';
 
     protected static ?int $navigationSort = 1;
 

@@ -21,7 +21,7 @@ class FamiliesTable
         return $table
             ->columns([
                 TextColumn::make('kk_number')
-                    ->label('Nomor KK')
+                    ->label('Nomor Kartu Keluarga (KK)')
                     ->searchable()
                     ->copyable()
                     ->copyMessage('Nomor KK disalin!')
@@ -56,7 +56,7 @@ class FamiliesTable
             ])
             ->recordActions([
                 EditAction::make()->label('Kelola KK'),
-                DeleteAction::make()->label('Hapus (Soft)'),
+                DeleteAction::make()->label('Hapus Sementara'),
                 ForceDeleteAction::make()->label('Hapus Permanen'),
                 RestoreAction::make()->label('Kembalikan'),
             ])

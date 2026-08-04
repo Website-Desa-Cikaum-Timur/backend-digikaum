@@ -24,13 +24,13 @@ class FamilyResource extends Resource
 
     protected static ?string $recordTitleAttribute = 'Family';
 
-    protected static ?string $modelLabel = 'Kartu Keluarga';
+    protected static ?string $modelLabel = 'Data Keluarga';
 
-    protected static ?string $pluralModelLabel = 'Daftar Kartu Keluarga';
+    protected static ?string $pluralModelLabel = 'Daftar Kepala Keluarga';
 
-    protected static ?string $navigationLabel = 'Kartu Keluarga';
+    protected static ?string $navigationLabel = 'Data Keluarga';
 
-    protected static string|UnitEnum|null $navigationGroup = 'Sensus Kependudukan';
+    protected static string|UnitEnum|null $navigationGroup = 'Administrasi Kependudukan';
 
     protected static ?int $navigationSort = 1;
 

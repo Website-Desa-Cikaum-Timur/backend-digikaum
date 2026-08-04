@@ -30,7 +30,7 @@ class PostCategoryForm
                             ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state ?? ''))),
 
                         TextInput::make('slug')
-                            ->label('URL Slug')
+                            ->label('Tautan Web (URL)')
                             ->helperText('Dihasilkan otomatis dari nama kategori. Tidak perlu diisi.')
                             ->disabled()
                             ->dehydrated()

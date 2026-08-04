@@ -22,7 +22,7 @@ class LocationForm
         return $schema
             ->components([
 
-                Section::make('Informasi Titik Spasial')
+                Section::make('Informasi Titik Lokasi')
                     ->description('Lengkapi data profil bangunan atau area.')
                     ->columns(2)
                     ->components([
@@ -74,7 +74,7 @@ class LocationForm
                     ->components([
 
                         TextInput::make('search_address')
-                            ->label('Cari Titik Lokasi Secara Otomatis (Geocoding)')
+                            ->label('Cari Titik Lokasi Secara Otomatis')
                             ->placeholder('Ketik nama desa / jalan / kota...')
                             ->helperText('Ketik dan tunggu 1 detik. Peta akan otomatis bergeser. Contoh: Cikaum Timur, Subang')
                             ->columnSpanFull()

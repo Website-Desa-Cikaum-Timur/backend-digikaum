@@ -28,7 +28,7 @@ class PostResource extends Resource
 
     protected static ?string $navigationLabel = 'Berita Desa';
 
-    protected static string|UnitEnum|null $navigationGroup = 'Manajemen Konten';
+    protected static string|UnitEnum|null $navigationGroup = 'Publikasi Desa';
 
     protected static ?int $navigationSort = 2;
 

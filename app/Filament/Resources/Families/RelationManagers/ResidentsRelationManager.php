@@ -168,7 +168,7 @@ class ResidentsRelationManager extends RelationManager
             ])
             ->actions([
                 EditAction::make()->label('Ubah'),
-                DeleteAction::make()->label('Hapus (Soft)'),
+                DeleteAction::make()->label('Hapus Sementara'),
                 ForceDeleteAction::make()->label('Hapus Permanen'),
                 RestoreAction::make()->label('Kembalikan'),
             ])

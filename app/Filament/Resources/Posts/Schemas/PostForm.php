@@ -93,7 +93,8 @@ class PostForm
                             ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state ?? ''))),
 
                         TextInput::make('slug')
-                            ->label('URL Slug')
+                            ->label('Tautan Web (URL)')
+                            ->helperText('Dihasilkan otomatis dari judul berita. Tidak perlu diisi.')
                             ->disabled()
                             ->dehydrated()
                             ->required()
@@ -101,7 +102,7 @@ class PostForm
                             ->unique(Post::class, 'slug', ignoreRecord: true),
 
                         Textarea::make('excerpt')
-                            ->label('Ringkasan (Excerpt)')
+                            ->label('Ringkasan Singkat')
                             ->helperText('Muncul di halaman depan website sebagai cuplikan singkat.')
                             ->maxLength(500)
                             ->rows(3),
