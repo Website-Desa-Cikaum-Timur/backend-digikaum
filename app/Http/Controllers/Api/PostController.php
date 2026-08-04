@@ -21,7 +21,10 @@ class PostController extends Controller
     public function index(Request $request): JsonResponse
     {
         $categorySlug = $request->query('category');
-        $posts = $this->repository->getPublishedPosts(10, $categorySlug);
+        $search = $request->query('search');
+        $sort = $request->query('sort', 'latest');
+
+        $posts = $this->repository->getPublishedPosts(10, $categorySlug, $search, $sort);
 
         return PostResource::collection($posts)->response();
     }

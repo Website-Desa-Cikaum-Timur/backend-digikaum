@@ -15,6 +15,7 @@ class PostCategoryResource extends JsonResource
             'slug' => $this->slug,
             'description' => $this->description,
             'is_active' => $this->is_active,
+            'posts_count' => $this->whenCounted('posts'),
             'created_at' => $this->created_at->toIso8601String(),
         ];
     }

@@ -4,6 +4,7 @@ namespace App\Repositories\Eloquent;
 
 use App\Models\PostCategory;
 use App\Repositories\Contracts\PostCategoryRepositoryInterface;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
 
 class PostCategoryRepository extends BaseRepository implements PostCategoryRepositoryInterface
@@ -17,6 +18,9 @@ class PostCategoryRepository extends BaseRepository implements PostCategoryRepos
     {
         return $this->model
             ->where('is_active', true)
+            ->withCount(['posts' => function (Builder $query) {
+                $query->published();
+            }])
             ->orderBy('name', 'asc')
             ->get();
     }
