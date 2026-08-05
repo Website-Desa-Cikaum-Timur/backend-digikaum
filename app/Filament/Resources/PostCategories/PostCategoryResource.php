@@ -29,7 +29,7 @@ class PostCategoryResource extends Resource
 
     protected static ?string $navigationLabel = 'Kategori Berita';
 
-    protected static string|UnitEnum|null $navigationGroup = 'Publikasi Desa';
+    protected static string|UnitEnum|null $navigationGroup = 'Potensi & Publikasi Desa';
 
     protected static ?int $navigationSort = 1;
 
