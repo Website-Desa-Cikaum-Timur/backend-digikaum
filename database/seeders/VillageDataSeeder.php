@@ -3,11 +3,13 @@
 namespace Database\Seeders;
 
 use App\Models\Complaint;
+use App\Models\Gallery;
 use App\Models\Location;
 use App\Models\Official;
 use App\Models\Organization;
 use App\Models\Post;
 use App\Models\PostCategory;
+use App\Models\Product;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Cache;
@@ -40,6 +42,12 @@ class VillageDataSeeder extends Seeder
 
             $this->command->info('Membangun data Pengaduan Masyarakat...');
             Complaint::factory(15)->create();
+
+            $this->command->info('Membangun data Katalog UMKM...');
+            Product::factory(25)->create();
+
+            $this->command->info('Membangun data Galeri Desa...');
+            Gallery::factory(30)->create();
         });
 
         Cache::flush();
