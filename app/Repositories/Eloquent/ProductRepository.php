@@ -5,6 +5,7 @@ namespace App\Repositories\Eloquent;
 use App\Models\Product;
 use App\Repositories\Contracts\ProductRepositoryInterface;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 class ProductRepository extends BaseRepository implements ProductRepositoryInterface
@@ -31,5 +32,13 @@ class ProductRepository extends BaseRepository implements ProductRepositoryInter
         }
 
         return $query->paginate($perPage);
+    }
+
+    public function findBySlug(string $slug): ?Model
+    {
+        return $this->model->active()
+            ->where('slug', $slug)
+            ->orWhere('id', $slug)
+            ->first();
     }
 }
