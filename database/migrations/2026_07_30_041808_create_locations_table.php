@@ -15,10 +15,10 @@ return new class extends Migration
             $table->string('category')->index();
             $table->text('description')->nullable();
             $table->text('address')->nullable();
-            $table->geometry('geom', subtype: 'point', srid: 4326);
+            $table->decimal('latitude', 10, 8);
+            $table->decimal('longitude', 11, 8);
             $table->boolean('is_active')->default(true);
             $table->timestamps();
-            $table->spatialIndex('geom');
         });
     }
 

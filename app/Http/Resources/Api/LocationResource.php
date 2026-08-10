@@ -17,9 +17,10 @@ class LocationResource extends JsonResource
             'description' => $this->description,
             'address' => $this->address,
             'is_active' => $this->is_active,
-
-            'geometry' => isset($this->geojson) ? json_decode($this->geojson) : null,
-
+            'geometry' => [
+                'type' => 'Point',
+                'coordinates' => [(float) $this->longitude, (float) $this->latitude],
+            ],
             'photo_url' => $this->getFirstMediaUrl('location_photos') ?: null,
         ];
     }
