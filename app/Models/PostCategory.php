@@ -6,6 +6,7 @@ use App\Shared\Concerns\HasUlid;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Facades\Cache;
 
 class PostCategory extends Model
 {
@@ -29,5 +30,16 @@ class PostCategory extends Model
     public function posts(): HasMany
     {
         return $this->hasMany(Post::class, 'post_category_id');
+    }
+
+    protected static function booted(): void
+    {
+        $clearCache = function () {
+            Cache::forget('post_categories_active');
+        };
+
+        static::created($clearCache);
+        static::updated($clearCache);
+        static::deleted($clearCache);
     }
 }

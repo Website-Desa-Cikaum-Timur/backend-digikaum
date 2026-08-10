@@ -28,6 +28,7 @@ use App\Repositories\Eloquent\PostRepository;
 use App\Repositories\Eloquent\ProductRepository;
 use App\Repositories\Eloquent\ResidentRepository;
 use App\Shared\Enums\UserRole;
+use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 use Spatie\Permission\Models\Role;
@@ -89,6 +90,8 @@ class AppServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
+        JsonResource::withoutWrapping();
+
         Gate::before(function ($user, string $ability) {
             return $user->hasRole(UserRole::SuperAdmin->value) ? true : null;
         });

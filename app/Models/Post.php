@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Facades\Cache;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 
@@ -51,5 +52,17 @@ class Post extends Model implements HasMedia
     {
         return $query->where('status', 'published')
             ->where('published_at', '<=', now());
+    }
+
+    protected static function booted(): void
+    {
+        $clearCache = function () {
+            Cache::forget('post_categories_active');
+            Cache::forget('dashboard_published_posts');
+        };
+
+        static::created($clearCache);
+        static::updated($clearCache);
+        static::deleted($clearCache);
     }
 }
