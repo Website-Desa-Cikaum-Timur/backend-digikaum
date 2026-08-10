@@ -32,7 +32,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"success":true,"message":"Data kategori berhasil diambil","data":[]}'
+        content: '{"success":true,"message":"Data kategori berhasil diambil","data":[{"id":"01kzn36ybw6mxabpzceg975sp9","name":"Inovasi Desa","slug":"inovasi-desa","description":"Inovasi dalam desa","is_active":true,"posts_count":0,"created_at":"2026-08-10T12:44:29+07:00"},{"id":"01kz7yrzw0sbwzrk1fycrwzdbv","name":"Iste Qui Numquam","slug":"iste-qui-numquam","description":"Rerum cupiditate fugit aut ut.","is_active":true,"posts_count":6,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzw1pkcwsxxj1tag960v","name":"Molestiae Dignissimos Quasi","slug":"molestiae-dignissimos-quasi","description":"Quod eius corrupti natus molestiae aut nesciunt.","is_active":true,"posts_count":2,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kzktd24x4qj20ak7ck884hbg","name":"Pembangunan Desa","slug":"pembangunan-desa","description":null,"is_active":true,"posts_count":1,"created_at":"2026-08-10T00:51:18+07:00"},{"id":"01kz7yrzw1pkcwsxxj1tag960t","name":"Repellendus Cumque Qui","slug":"repellendus-cumque-qui","description":"Nisi omnis officiis ipsam aut amet et alias.","is_active":true,"posts_count":3,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzw0sbwzrk1fycrwzdbw","name":"Sequi Aliquid Suscipit","slug":"sequi-aliquid-suscipit","description":"Molestiae et incidunt nam tenetur accusamus dolorem rerum dolorem.","is_active":true,"posts_count":6,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzvzdy6ycx23ad8yzgd6","name":"Sit Cum Blanditiis","slug":"sit-cum-blanditiis","description":"Reiciendis fuga numquam et recusandae dolor quia non.","is_active":true,"posts_count":5,"created_at":"2026-08-05T10:16:50+07:00"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -124,7 +124,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"success":true,"message":"Bagan SOTK berhasil diambil","data":[]}'
+        content: '{"success":true,"message":"Bagan SOTK berhasil diambil","data":[{"id":"01kz7yrzs0fxcac1vxk1ej87ev","name":"PD Mustofa Desa","slug":"pd-mustofa-desa","description":"Illo accusamus perferendis ut.","is_active":true,"officials":[{"id":"01kz7yrzvmxxpccmdpchwfj90r","organization_id":"01kz7yrzs0fxcac1vxk1ej87ev","name":"Pia Fathonah Mayasari","position":"Pastor","nip_nik":"6502637989664968","bio":"Accusantium et accusantium est. Ad earum odio non tempore sed enim soluta nobis. Assumenda molestias eligendi et modi soluta eos. Soluta consequatur quaerat beatae eaque ut voluptatem.","sort_order":3,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzvmxxpccmdpchwfj90s","organization_id":"01kz7yrzs0fxcac1vxk1ej87ev","name":"Jane Gasti Farida S.I.Kom","position":"Ustaz \/ Mubaligh","nip_nik":"4346370231610449","bio":"Suscipit qui odio reprehenderit qui animi cupiditate mollitia. Ut assumenda qui est eos. Quia alias officia nisi iusto vel rerum est.","sort_order":5,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzvhpa131jcs54mh0f8g","organization_id":"01kz7yrzs0fxcac1vxk1ej87ev","name":"Victoria Tami Kuswandari","position":"Peternak","nip_nik":"4194252433092340","bio":"Omnis dolor et quas voluptatem non sapiente. Voluptas iusto maiores dolor reprehenderit perspiciatis ad voluptas. Iusto modi minus cupiditate ex ut ea assumenda. Qui neque atque voluptatem et sed non quod.","sort_order":10,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzvkdjxaj7w7ry3qw0yf","organization_id":"01kz7yrzs0fxcac1vxk1ej87ev","name":"Amelia Ida Hartati S.T.","position":"Penyiar Radio","nip_nik":"0280643305811680","bio":"Voluptatibus reiciendis dolores ut. Eos earum provident aliquam iusto inventore aut nemo aliquam. Consequatur atque nostrum placeat ut.","sort_order":10,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"}],"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kzkcv2a9q073xnvnfhgtb84k","name":"Perangkat Desa","slug":"perangkat-desa","description":"Perangkat desa bertugas membantu Kepala Desa dalam penyelenggaraan pemerintahan, pelaksanaan pembangunan, pembinaan kemasyarakatan, dan pemberdayaan masyarakat. Susunan dan rincian tugas pokok serta fungsi (tupoksi) masing-masing jabatan diatur berdasarkan peraturan perundang-undangan yang berlaku di Indonesia.","is_active":true,"officials":[{"id":"01kzkdpnbkqxct4by8c9j0m3fr","organization_id":"01kzkcv2a9q073xnvnfhgtb84k","name":"Bobon  Santoso","position":"Kaur Perencanaan","nip_nik":"2136723484826076","bio":null,"sort_order":0,"is_active":true,"photo_url":"http:\/\/localhost:8000\/storage\/11\/01KZKDPNC8WNRX1TF9P2RQDT62.jpg","created_at":"2026-08-09T21:09:21+07:00"},{"id":"01kzkd7v7792ey2wdwzws6a2r0","organization_id":"01kzkcv2a9q073xnvnfhgtb84k","name":"Atik Sukamti","position":"Kaur Keuangan","nip_nik":"8185471937936334","bio":null,"sort_order":0,"is_active":true,"photo_url":"http:\/\/localhost:8000\/storage\/10\/01KZKD7V7P84W8T6ADCWERM77Y.jpg","created_at":"2026-08-09T21:01:16+07:00"},{"id":"01kzkd4rd5qp8sqwnv3kxjswnb","organization_id":"01kzkcv2a9q073xnvnfhgtb84k","name":"Jono","position":"Sekretaris Desa","nip_nik":"2136723484826088","bio":null,"sort_order":0,"is_active":true,"photo_url":"http:\/\/localhost:8000\/storage\/8\/01KZKD4RE53XKHGATXYJ2T6FJR.jpg","created_at":"2026-08-09T20:59:35+07:00"},{"id":"01kzkd6ajkn93dr5e9rdee6a8z","organization_id":"01kzkcv2a9q073xnvnfhgtb84k","name":"Tariatno","position":"Kasi Pemerintahan","nip_nik":"8185471937936335","bio":null,"sort_order":0,"is_active":true,"photo_url":"http:\/\/localhost:8000\/storage\/9\/01KZKD6AK6B4AP9NS4J1TA8WZ7.jpg","created_at":"2026-08-09T21:00:26+07:00"},{"id":"01kzkcyqjph1hsemnxkwc6va37","organization_id":"01kzkcv2a9q073xnvnfhgtb84k","name":"Dedeh Sukaesih","position":"Kepala Desa","nip_nik":"1234123412341234","bio":null,"sort_order":0,"is_active":true,"photo_url":"http:\/\/localhost:8000\/storage\/7\/01KZKCYQMV2YG2ZJRVBEKFRV54.jpg","created_at":"2026-08-09T20:56:17+07:00"}],"created_at":"2026-08-09T20:54:17+07:00"},{"id":"01kz7yrzsknaa4s6kmc58ts0zw","name":"PJ Handayani Tbk Desa","slug":"pj-handayani-tbk-desa","description":"Maiores quas perspiciatis adipisci beatae sunt a aut.","is_active":true,"officials":[{"id":"01kz7yrzvr1h44ph6bfd42whqc","organization_id":"01kz7yrzsknaa4s6kmc58ts0zw","name":"Luluh Siregar S.Sos","position":"Tukang Cukur","nip_nik":"6522977580409165","bio":"Eos dolorem rerum vero et culpa. Cum et iste totam possimus sed consequuntur.","sort_order":1,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzvs7yepacvhq12t1cey","organization_id":"01kz7yrzsknaa4s6kmc58ts0zw","name":"Novi Novi Mayasari","position":"Seniman","nip_nik":"4457899901466911","bio":"Aut pariatur minus et beatae. Nostrum distinctio quia aut at et quos consequatur. Illum fugiat veritatis iure qui quisquam sit. Perspiciatis vel eaque doloribus maiores.","sort_order":1,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzvv3y3xhtheqqyn2b6y","organization_id":"01kz7yrzsknaa4s6kmc58ts0zw","name":"Zamira Anggraini","position":"Konsultan","nip_nik":"9978118768710998","bio":"Architecto voluptas qui culpa vero fugiat tempore eum. Quo nihil excepturi blanditiis voluptas earum. Suscipit possimus illo et a id doloribus. Autem quam qui voluptate aut assumenda voluptatum et.","sort_order":7,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzvtedceh2hk96tprq7x","organization_id":"01kz7yrzsknaa4s6kmc58ts0zw","name":"Imam Simbolon","position":"Penulis","nip_nik":"8833203947619095","bio":"Optio consectetur aut praesentium. Sunt ad autem accusamus assumenda natus iure fugit. Cupiditate vel voluptatem voluptatem porro adipisci magni nulla. Et officia quia voluptas.","sort_order":9,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzvr1h44ph6bfd42whqb","organization_id":"01kz7yrzsknaa4s6kmc58ts0zw","name":"Kamila Hani Laksmiwati S.Pd","position":"Kepolisian RI (POLRI)","nip_nik":"2454708260141303","bio":"Dolor non libero praesentium sint quod pariatur sapiente. Provident et et sit ex vel vel officia. Molestias vel dignissimos repellat amet.","sort_order":10,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"}],"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzsjccs2kf1yh8v2727s","name":"PJ Rajasa Desa","slug":"pj-rajasa-desa","description":"Voluptate laudantium at dolore reprehenderit veniam.","is_active":true,"officials":[{"id":"01kz7yrzvpje1bgw81j8t9ecn1","organization_id":"01kz7yrzsjccs2kf1yh8v2727s","name":"Anita Zamira Melani","position":"Pembantu Rumah Tangga","nip_nik":"7141448866682058","bio":"Molestiae sunt asperiores vel est. Non enim in ipsam laboriosam. Consequatur quis aspernatur in et.","sort_order":1,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzvng98cg25xa96pr0ny","organization_id":"01kz7yrzsjccs2kf1yh8v2727s","name":"Yani Halimah","position":"Buruh Tani \/ Perkebunan","nip_nik":"8946662124517060","bio":"Quae itaque temporibus quia tempore perferendis nobis. Repellendus delectus sunt reprehenderit harum repellat. Laudantium praesentium voluptatibus et eum repudiandae consequuntur quaerat. Quia totam quas ut perferendis quisquam qui recusandae non.","sort_order":3,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzvq46j3b5zh5d9sbs1k","organization_id":"01kz7yrzsjccs2kf1yh8v2727s","name":"Rosman Atma Hutagalung","position":"Pembantu Rumah Tangga","nip_nik":"5731114578310845","bio":"Explicabo et nobis soluta natus. Et nisi sint rem explicabo odio facere. Quis officiis magni fugiat sed. Voluptas velit ut vero sit consectetur repudiandae.","sort_order":8,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"}],"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzsm3qjthjfzbjw9grkn","name":"PT Permata Hassanah Desa","slug":"pt-permata-hassanah-desa","description":"Eum aut nostrum dolores eum in voluptatibus suscipit.","is_active":true,"officials":[{"id":"01kz7yrzvwva3dxk8fk2epzw6k","organization_id":"01kz7yrzsm3qjthjfzbjw9grkn","name":"Hendri Jono Hutagalung","position":"Tukang Gigi","nip_nik":"9500272228920929","bio":"Aliquid et rem laboriosam est quis. Vitae rem voluptas minus qui sit quibusdam. Nihil inventore harum ut at.","sort_order":4,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzvwva3dxk8fk2epzw6j","organization_id":"01kz7yrzsm3qjthjfzbjw9grkn","name":"Kayla Safitri","position":"Penyiar Radio","nip_nik":"5393948195830626","bio":"Nemo commodi quas aut excepturi at similique. Harum animi nam accusantium nulla et enim. Et facere eaque fugiat et. Suscipit ea doloribus ipsam ipsa quidem debitis harum.","sort_order":7,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzvxj13cbvnjtewc7cp9","organization_id":"01kz7yrzsm3qjthjfzbjw9grkn","name":"Hamzah Santoso","position":"Montir","nip_nik":"7041129802592134","bio":"Dolorum pariatur ut aliquam deleniti. Maiores atque voluptates explicabo adipisci totam laboriosam aut. Commodi velit exercitationem ratione rerum cupiditate laborum. Accusantium officiis quaerat at unde architecto dignissimos.","sort_order":7,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzvwva3dxk8fk2epzw6m","organization_id":"01kz7yrzsm3qjthjfzbjw9grkn","name":"Dalima Salwa Nurdiyanti","position":"Pelaut","nip_nik":"8616630238455608","bio":"Ea asperiores corporis cum. Occaecati iste ab cupiditate debitis consectetur. Recusandae mollitia quia dignissimos earum expedita voluptates ducimus.","sort_order":10,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"}],"created_at":"2026-08-05T10:16:50+07:00"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -159,14 +159,14 @@ endpoints:
         name: organization
         description: 'The organization.'
         required: true
-        example: architecto
+        example: 01kz7yrzs0fxcac1vxk1ej87ev
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      organization: architecto
+      organization: 01kz7yrzs0fxcac1vxk1ej87ev
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -175,8 +175,8 @@ endpoints:
     responses:
       -
         custom: []
-        status: 404
-        content: '{"success":false,"message":"Organisasi tidak ditemukan"}'
+        status: 200
+        content: '{"success":true,"message":"Detail organisasi berhasil diambil","data":{"id":"01kz7yrzs0fxcac1vxk1ej87ev","name":"PD Mustofa Desa","slug":"pd-mustofa-desa","description":"Illo accusamus perferendis ut.","is_active":true,"officials":[{"id":"01kz7yrzvmxxpccmdpchwfj90r","organization_id":"01kz7yrzs0fxcac1vxk1ej87ev","name":"Pia Fathonah Mayasari","position":"Pastor","nip_nik":"6502637989664968","bio":"Accusantium et accusantium est. Ad earum odio non tempore sed enim soluta nobis. Assumenda molestias eligendi et modi soluta eos. Soluta consequatur quaerat beatae eaque ut voluptatem.","sort_order":3,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzvmxxpccmdpchwfj90s","organization_id":"01kz7yrzs0fxcac1vxk1ej87ev","name":"Jane Gasti Farida S.I.Kom","position":"Ustaz \/ Mubaligh","nip_nik":"4346370231610449","bio":"Suscipit qui odio reprehenderit qui animi cupiditate mollitia. Ut assumenda qui est eos. Quia alias officia nisi iusto vel rerum est.","sort_order":5,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzvhpa131jcs54mh0f8g","organization_id":"01kz7yrzs0fxcac1vxk1ej87ev","name":"Victoria Tami Kuswandari","position":"Peternak","nip_nik":"4194252433092340","bio":"Omnis dolor et quas voluptatem non sapiente. Voluptas iusto maiores dolor reprehenderit perspiciatis ad voluptas. Iusto modi minus cupiditate ex ut ea assumenda. Qui neque atque voluptatem et sed non quod.","sort_order":10,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzvkdjxaj7w7ry3qw0yf","organization_id":"01kz7yrzs0fxcac1vxk1ej87ev","name":"Amelia Ida Hartati S.T.","position":"Penyiar Radio","nip_nik":"0280643305811680","bio":"Voluptatibus reiciendis dolores ut. Eos earum provident aliquam iusto inventore aut nemo aliquam. Consequatur atque nostrum placeat ut.","sort_order":10,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"}],"created_at":"2026-08-05T10:16:50+07:00"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -211,14 +211,14 @@ endpoints:
         name: official
         description: 'The official.'
         required: true
-        example: architecto
+        example: 01kz7yrzvhpa131jcs54mh0f8g
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      official: architecto
+      official: 01kz7yrzvhpa131jcs54mh0f8g
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -227,8 +227,8 @@ endpoints:
     responses:
       -
         custom: []
-        status: 404
-        content: '{"success":false,"message":"Pejabat tidak ditemukan"}'
+        status: 200
+        content: '{"success":true,"message":"Detail pejabat berhasil diambil","data":{"id":"01kz7yrzvhpa131jcs54mh0f8g","organization_id":"01kz7yrzs0fxcac1vxk1ej87ev","name":"Victoria Tami Kuswandari","position":"Peternak","nip_nik":"4194252433092340","bio":"Omnis dolor et quas voluptatem non sapiente. Voluptas iusto maiores dolor reprehenderit perspiciatis ad voluptas. Iusto modi minus cupiditate ex ut ea assumenda. Qui neque atque voluptatem et sed non quod.","sort_order":10,"is_active":true,"photo_url":null,"created_at":"2026-08-05T10:16:50+07:00"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -268,7 +268,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"data":[],"links":{"first":"http:\/\/localhost\/api\/v1\/posts?page=1","last":"http:\/\/localhost\/api\/v1\/posts?page=1","prev":null,"next":null},"meta":{"current_page":1,"from":null,"last_page":1,"links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost\/api\/v1\/posts?page=1","label":"1","page":1,"active":true},{"url":null,"label":"Next &raquo;","page":null,"active":false}],"path":"http:\/\/localhost\/api\/v1\/posts","per_page":10,"to":null,"total":0}}'
+        content: '{"data":[{"id":"01kz7yrzwsfk3gh0e7kar660sm","title":"Quia voluptatem esse sit vel.","slug":"quia-voluptatem-esse-sit-vel","excerpt":"Voluptatum illum dignissimos sunt deserunt. Minus ut ipsum consequatur aut omnis non qui non. Qui nisi assumenda harum sapiente.","content":"<p>Eos aut quae ut qui nobis expedita corporis. Impedit asperiores nobis et voluptas temporibus eius vero omnis. Sunt aut explicabo consequatur nostrum ducimus.Delectus numquam tempora dignissimos ipsum id. Sed occaecati ut culpa id et sit. Ratione earum laboriosam aut in aut. Sed maiores unde possimus in.Dolores modi nihil cupiditate commodi. Perferendis quisquam praesentium architecto nostrum ratione.<\/p>","status":"published","is_highlight":true,"views_count":6,"published_at":"2026-08-05T10:16:50+07:00","cover_image_url":"http:\/\/localhost:8000\/storage\/12\/01KZN34QWGR159ZSAA2B7DAF36.jpeg","category":{"id":"01kzktd24x4qj20ak7ck884hbg","name":"Pembangunan Desa","slug":"pembangunan-desa"},"author":{"id":"01kz7yrym70qjnzsvr9kaspt8y","name":"Editor Konten"},"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzwrc1c29xy87tgkwd4d","title":"Tempore autem iste debitis ipsam non suscipit.","slug":"tempore-autem-iste-debitis-ipsam-non-suscipit","excerpt":"Sed dolores hic saepe consequatur similique architecto. Iusto soluta incidunt placeat. Deleniti animi blanditiis at. Et dolor quam voluptatum architecto.","content":"Nostrum voluptatem ut labore aliquid tempora ipsa error porro. Aperiam voluptates molestias praesentium. Sit voluptas omnis ut voluptate rem est.\n\nBlanditiis et ipsam ut voluptatem quae. Eius aut autem est quae. Facilis velit ullam neque tempore deserunt est dicta.\n\nCum sint nobis fuga doloribus ut doloremque. Excepturi expedita est dolores corrupti aliquam. Ut consectetur tempora voluptatibus quam est distinctio. Et vel libero velit.","status":"published","is_highlight":false,"views_count":1,"published_at":"2026-08-05T10:16:50+07:00","cover_image_url":null,"category":{"id":"01kz7yrzw1pkcwsxxj1tag960v","name":"Molestiae Dignissimos Quasi","slug":"molestiae-dignissimos-quasi"},"author":{"id":"01kz7yrym70qjnzsvr9kaspt8y","name":"Editor Konten"},"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzwrc1c29xy87tgkwd4c","title":"Sequi quis et nobis ex facilis dolorem.","slug":"sequi-quis-et-nobis-ex-facilis-dolorem","excerpt":"Est eius et minus vero. Veniam magnam est nulla dolor nisi iusto et. Dignissimos dolor adipisci iure omnis aspernatur ut vel et. Animi alias ut sit quis sunt error.","content":"Voluptatem qui consequatur error atque saepe voluptatem et autem. Voluptatem id eaque illum.\n\nSaepe modi nemo quam rerum omnis error. Voluptas voluptas minus et debitis quas harum facere aut. Possimus ad ratione quas assumenda tempore.\n\nAccusamus provident veritatis rerum praesentium ad facilis pariatur voluptas. Dolorem optio aut enim sunt sed accusamus. Ipsam assumenda cum quasi unde ut minima distinctio. Quia pariatur a occaecati sint rerum quos.","status":"published","is_highlight":false,"views_count":0,"published_at":"2026-08-05T10:16:50+07:00","cover_image_url":null,"category":{"id":"01kz7yrzw1pkcwsxxj1tag960v","name":"Molestiae Dignissimos Quasi","slug":"molestiae-dignissimos-quasi"},"author":{"id":"01kz7yrym70qjnzsvr9kaspt8y","name":"Editor Konten"},"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzwphqx60qk2mz86dwpr","title":"Molestiae qui voluptatem repellat quam.","slug":"molestiae-qui-voluptatem-repellat-quam","excerpt":"Reiciendis dignissimos libero maxime impedit. Totam temporibus vero delectus sed. Ut ut adipisci dolor at. Vel est rem omnis dignissimos dolor.","content":"Odio qui culpa deserunt qui ab dicta iste. Consequatur repellat at necessitatibus facilis. Vel qui maiores temporibus maiores temporibus.\n\nRecusandae architecto rerum dolore in omnis. Nihil omnis nesciunt aut qui sed atque. Sed accusamus non occaecati eos non incidunt molestiae.\n\nSit ipsa repellendus quasi voluptatem esse consectetur velit. Cum est vero itaque dolorem accusantium reprehenderit quia. Voluptas delectus dolorum quo ipsam blanditiis et. Deleniti eos omnis est voluptatum.","status":"published","is_highlight":false,"views_count":0,"published_at":"2026-08-05T10:16:50+07:00","cover_image_url":null,"category":{"id":"01kz7yrzw1pkcwsxxj1tag960t","name":"Repellendus Cumque Qui","slug":"repellendus-cumque-qui"},"author":{"id":"01kz7yrym70qjnzsvr9kaspt8y","name":"Editor Konten"},"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzwphqx60qk2mz86dwpq","title":"Est magnam est dolorem voluptatem sit hic.","slug":"est-magnam-est-dolorem-voluptatem-sit-hic","excerpt":"Et voluptates quae esse veniam. Expedita voluptas voluptatem quis at velit. Eos quam laboriosam nam nulla.","content":"Tenetur deleniti illum voluptatem occaecati. Ad debitis accusantium aperiam sit a. Similique omnis voluptas non et.\n\nVelit consequatur qui eum assumenda. Dolorem corrupti qui laudantium asperiores repellat nulla porro. Quo dolore quidem ab odio.\n\nEt quasi dolorum sed et qui quae. Qui similique vel sed qui modi. Et magni debitis tempore soluta molestiae quas et sint. Eius molestias expedita dolores enim tenetur ut.","status":"published","is_highlight":false,"views_count":0,"published_at":"2026-08-05T10:16:50+07:00","cover_image_url":null,"category":{"id":"01kz7yrzw1pkcwsxxj1tag960t","name":"Repellendus Cumque Qui","slug":"repellendus-cumque-qui"},"author":{"id":"01kz7yrym70qjnzsvr9kaspt8y","name":"Editor Konten"},"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzwphqx60qk2mz86dwpp","title":"Voluptas necessitatibus et quam id cupiditate sint.","slug":"voluptas-necessitatibus-et-quam-id-cupiditate-sint","excerpt":"Id perferendis sed blanditiis iure voluptas. Omnis vel voluptatum ullam aperiam dolores expedita. Itaque dignissimos nesciunt autem excepturi id.","content":"Ipsa totam qui quae labore. Architecto tempore odio culpa odit aut nobis. Corrupti voluptas fuga sunt neque. Porro blanditiis beatae amet praesentium iure est.\n\nImpedit quis voluptatem repudiandae repellendus cupiditate qui. Et doloremque asperiores quia debitis perspiciatis laborum qui qui. At laudantium et architecto sequi eius assumenda. Voluptatem eos ut quas. Qui earum soluta quod ducimus et quos in facere.\n\nUt aperiam voluptate rem et. Necessitatibus qui est dicta deserunt ut alias expedita. Id qui saepe quod exercitationem. Aut exercitationem aspernatur inventore quam est qui dicta.","status":"published","is_highlight":false,"views_count":0,"published_at":"2026-08-05T10:16:50+07:00","cover_image_url":null,"category":{"id":"01kz7yrzw1pkcwsxxj1tag960t","name":"Repellendus Cumque Qui","slug":"repellendus-cumque-qui"},"author":{"id":"01kz7yrym70qjnzsvr9kaspt8y","name":"Editor Konten"},"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzwm421d7r8age5j8e7d","title":"Harum itaque ipsa temporibus tenetur odio.","slug":"harum-itaque-ipsa-temporibus-tenetur-odio","excerpt":"Dolore cum blanditiis dignissimos. Laborum iste autem unde facere laudantium. Cum ipsum sed quia nulla quam. Velit culpa voluptatum qui sunt aperiam velit. Perferendis ipsa et veniam rerum.","content":"Error suscipit aperiam optio ut. Accusamus laborum qui quibusdam occaecati repellendus maxime. Voluptatum esse ut maiores expedita magni dolores. Minima dolorem eveniet perferendis ipsa omnis quis in. Corporis recusandae omnis accusantium dignissimos ea voluptates in.\n\nQuia tenetur omnis est non consequatur vel. Sequi exercitationem et perspiciatis. Aut eligendi fugit porro doloremque.\n\nDistinctio officiis dignissimos cupiditate nemo iste beatae. Facilis ut explicabo molestiae ut est. Corrupti vero eum sunt dicta necessitatibus aut illo. Optio sunt repellat repellat.","status":"published","is_highlight":false,"views_count":0,"published_at":"2026-08-05T10:16:50+07:00","cover_image_url":null,"category":{"id":"01kz7yrzw0sbwzrk1fycrwzdbw","name":"Sequi Aliquid Suscipit","slug":"sequi-aliquid-suscipit"},"author":{"id":"01kz7yrym70qjnzsvr9kaspt8y","name":"Editor Konten"},"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzwm421d7r8age5j8e7c","title":"Aut voluptas ut dolor aut ipsa qui.","slug":"aut-voluptas-ut-dolor-aut-ipsa-qui","excerpt":"Dolores tempore qui quia dolorem aut. Officia aperiam omnis voluptas animi sequi ipsam. Velit voluptas sint et ea.","content":"Quidem vitae atque sequi sed tenetur commodi mollitia. Earum sequi fugiat facilis dolores odit modi consectetur.\n\nAdipisci quo ut explicabo voluptatem. Placeat odio beatae quis voluptas consectetur quo officiis. Culpa dolorem facilis ut reprehenderit perferendis magni.\n\nVelit animi velit deleniti harum voluptas rem neque. Ut quod expedita nisi eos officiis. Dolores qui est quo voluptatem.","status":"published","is_highlight":false,"views_count":0,"published_at":"2026-08-05T10:16:50+07:00","cover_image_url":null,"category":{"id":"01kz7yrzw0sbwzrk1fycrwzdbw","name":"Sequi Aliquid Suscipit","slug":"sequi-aliquid-suscipit"},"author":{"id":"01kz7yrym70qjnzsvr9kaspt8y","name":"Editor Konten"},"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzwknzgh1tr2ftm147df","title":"Excepturi non quo et sint.","slug":"excepturi-non-quo-et-sint","excerpt":"Alias voluptatem molestiae ipsum tempora. Est temporibus occaecati in laudantium dicta non. Nobis enim perferendis labore voluptatum inventore quia voluptates.","content":"Dolores et suscipit delectus vero et omnis sed ut. Sunt dolores odio eos ut voluptas. Illo quisquam ad quasi rerum. Dicta iste molestiae facilis incidunt.\n\nAd autem autem explicabo autem suscipit exercitationem rem debitis. Ea eum sed exercitationem. Et aut nemo cupiditate ea omnis. Quibusdam corrupti soluta quidem est. Expedita eos ut provident pariatur officia nemo quo.\n\nDolor qui voluptatem iste est. Explicabo corrupti ut recusandae ut. Veritatis expedita ullam harum doloribus qui est ut. Cumque omnis laboriosam aliquid doloribus minus nesciunt.","status":"published","is_highlight":false,"views_count":0,"published_at":"2026-08-05T10:16:50+07:00","cover_image_url":null,"category":{"id":"01kz7yrzw0sbwzrk1fycrwzdbw","name":"Sequi Aliquid Suscipit","slug":"sequi-aliquid-suscipit"},"author":{"id":"01kz7yrym70qjnzsvr9kaspt8y","name":"Editor Konten"},"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzwknzgh1tr2ftm147de","title":"Alias quia dolore aut eum.","slug":"alias-quia-dolore-aut-eum","excerpt":"Ea qui omnis illum esse aperiam. Libero maiores consequuntur vero harum vero in dolores. Impedit sint consectetur iure. Laudantium consequatur eveniet odit vel excepturi omnis.","content":"Enim cum cupiditate consequatur ut. Voluptas qui quam nesciunt sit consequatur. Non voluptates ut hic facilis. Magnam omnis aut ad sequi quaerat.\n\nPariatur tempora voluptatem eveniet dolores cum. Exercitationem culpa at commodi omnis. Et amet nihil vero iusto velit libero.\n\nDoloremque nihil autem omnis explicabo. Unde itaque in autem laudantium. Explicabo autem assumenda a. Eum eos ad temporibus sit.","status":"published","is_highlight":false,"views_count":0,"published_at":"2026-08-05T10:16:50+07:00","cover_image_url":null,"category":{"id":"01kz7yrzw0sbwzrk1fycrwzdbw","name":"Sequi Aliquid Suscipit","slug":"sequi-aliquid-suscipit"},"author":{"id":"01kz7yrym70qjnzsvr9kaspt8y","name":"Editor Konten"},"created_at":"2026-08-05T10:16:50+07:00"}],"links":{"first":"http:\/\/localhost:8000\/api\/v1\/posts?page=1","last":"http:\/\/localhost:8000\/api\/v1\/posts?page=3","prev":null,"next":"http:\/\/localhost:8000\/api\/v1\/posts?page=2"},"meta":{"current_page":1,"from":1,"last_page":3,"links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/v1\/posts?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/v1\/posts?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/v1\/posts?page=3","label":"3","page":3,"active":false},{"url":"http:\/\/localhost:8000\/api\/v1\/posts?page=2","label":"Next &raquo;","page":2,"active":false}],"path":"http:\/\/localhost:8000\/api\/v1\/posts","per_page":10,"to":10,"total":23}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -303,14 +303,14 @@ endpoints:
         name: slug
         description: 'The slug of the post.'
         required: true
-        example: architecto
+        example: 01kz7yrzw30pgr45w89qx3rq5b
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      slug: architecto
+      slug: 01kz7yrzw30pgr45w89qx3rq5b
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -360,7 +360,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"success":true,"data":[]}'
+        content: '{"success":true,"data":[{"id":"01kz7yrzwymrmgydmx9wpx3vnd","name":"CV Hasanah Tbk","slug":"cv-hasanah-tbk-2d6of","category":"umkm","description":"Et sed doloremque ut quidem nisi.","address":"Ki. Suprapto No. 580, Payakumbuh 19116, Aceh","is_active":null,"geometry":{"type":"Point","coordinates":[81.532921,14.178236]},"photo_url":null},{"id":"01kz7yrzx50tbc5a9vdnhnr906","name":"Fa Suwarno","slug":"fa-suwarno-aceye","category":"umkm","description":"Veniam provident iure accusantium aliquid sunt voluptatem.","address":"Jln. Sunaryo No. 471, Probolinggo 45850, Kalteng","is_active":null,"geometry":{"type":"Point","coordinates":[-89.671935,82.781006]},"photo_url":null},{"id":"01kz7yrzx61869t4t6vmp8pe8v","name":"CV Prasetyo Putra","slug":"cv-prasetyo-putra-myid9","category":"umkm","description":"Aut quaerat quo harum aut veritatis quam ullam.","address":"Kpg. Dago No. 552, Serang 42647, Kalbar","is_active":null,"geometry":{"type":"Point","coordinates":[-144.209666,-12.724268]},"photo_url":null},{"id":"01kz7yrzx61869t4t6vmp8pe8w","name":"Perum Mandasari","slug":"perum-mandasari-wxcgd","category":"umkm","description":"Et ea corrupti saepe ab atque saepe molestiae.","address":"Jr. Baiduri No. 353, Serang 83042, Kaltim","is_active":null,"geometry":{"type":"Point","coordinates":[-31.399672,-68.229324]},"photo_url":null},{"id":"01kz7yrzx7yn0xh5gs3s0grn4c","name":"Yayasan Haryanti","slug":"yayasan-haryanti-m9c0k","category":"umkm","description":"Sint mollitia dolore dolores eaque id.","address":"Psr. Lada No. 586, Prabumulih 88463, DIY","is_active":null,"geometry":{"type":"Point","coordinates":[-100.521444,74.838956]},"photo_url":null},{"id":"01kz7yrzx7yn0xh5gs3s0grn4d","name":"PD Marpaung","slug":"pd-marpaung-xnuco","category":"umkm","description":"Nihil sint nostrum culpa rem earum.","address":"Ki. BKR No. 768, Ambon 33418, Papua","is_active":null,"geometry":{"type":"Point","coordinates":[-51.258814,72.498494]},"photo_url":null},{"id":"01kz7yrzx8z8yyy8195ss7zv34","name":"UD Adriansyah Pudjiastuti","slug":"ud-adriansyah-pudjiastuti-iybk0","category":"umkm","description":"Dolor corrupti recusandae quaerat voluptate explicabo sed porro culpa.","address":"Gg. Bahagia  No. 913, Bukittinggi 42076, Lampung","is_active":null,"geometry":{"type":"Point","coordinates":[-7.57826,34.175955]},"photo_url":null},{"id":"01kz7yrzx8z8yyy8195ss7zv35","name":"UD Puspita","slug":"ud-puspita-kgrsm","category":"umkm","description":"Temporibus sint voluptates impedit nobis qui ab eum.","address":"Ki. Salak No. 407, Serang 68420, Jatim","is_active":null,"geometry":{"type":"Point","coordinates":[38.930357,-54.654355]},"photo_url":null},{"id":"01kz7yrzx9fmcmraccxb3k68w2","name":"Yayasan Aryani (Persero) Tbk","slug":"yayasan-aryani-persero-tbk-clwq0","category":"umkm","description":"Aspernatur id nisi quo sint animi.","address":"Gg. Casablanca No. 507, Magelang 53749, Jateng","is_active":null,"geometry":{"type":"Point","coordinates":[-61.012888,-69.370003]},"photo_url":null},{"id":"01kz7yrzx9fmcmraccxb3k68w3","name":"PT Iswahyudi Tbk","slug":"pt-iswahyudi-tbk-kqurk","category":"umkm","description":"Maxime voluptatem laudantium quo hic deserunt id.","address":"Ki. Baladewa No. 156, Bontang 83519, DKI","is_active":null,"geometry":{"type":"Point","coordinates":[7.137636,71.444113]},"photo_url":null},{"id":"01kz7yrzxagajmyxp9a45pzjhw","name":"Perum Iswahyudi (Persero) Tbk","slug":"perum-iswahyudi-persero-tbk-drnoe","category":"umkm","description":"Eum sint quis totam officia eum voluptas voluptas.","address":"Jr. Bara Tambar No. 836, Samarinda 99599, Jabar","is_active":null,"geometry":{"type":"Point","coordinates":[178.004162,-83.634429]},"photo_url":null},{"id":"01kz7yrzxagajmyxp9a45pzjhx","name":"PD Sihombing Farida Tbk","slug":"pd-sihombing-farida-tbk-zhxst","category":"umkm","description":"Architecto perferendis quibusdam modi aperiam ut natus.","address":"Ds. Setia Budi No. 906, Palopo 67981, Kalsel","is_active":null,"geometry":{"type":"Point","coordinates":[65.761544,60.047094]},"photo_url":null},{"id":"01kz7yrzxbsasfktcknderea4s","name":"PT Suwarno","slug":"pt-suwarno-z6iju","category":"umkm","description":"Commodi consectetur voluptas sunt unde facere tenetur necessitatibus.","address":"Dk. Padang No. 64, Pangkal Pinang 94406, Sumbar","is_active":null,"geometry":{"type":"Point","coordinates":[8.649406,-73.585166]},"photo_url":null},{"id":"01kz7yrzxbsasfktcknderea4t","name":"UD Mardhiyah","slug":"ud-mardhiyah-gx9y3","category":"umkm","description":"Ex sint et in aliquam eius aut quod.","address":"Gg. Bawal No. 15, Ambon 87664, Bengkulu","is_active":null,"geometry":{"type":"Point","coordinates":[-126.486244,-25.004157]},"photo_url":null},{"id":"01kz7yrzxbsasfktcknderea4v","name":"PD Wahyudin Dongoran","slug":"pd-wahyudin-dongoran-zd4c1","category":"umkm","description":"Laudantium a quidem eveniet quod asperiores deleniti praesentium.","address":"Jr. Wahidin No. 55, Banjar 82449, Pabar","is_active":null,"geometry":{"type":"Point","coordinates":[22.145427,1.876328]},"photo_url":null},{"id":"01kz7yrzxbsasfktcknderea4w","name":"Yayasan Hutagalung Mustofa Tbk","slug":"yayasan-hutagalung-mustofa-tbk-odkkk","category":"umkm","description":"Explicabo aliquam harum aperiam vel possimus voluptate occaecati autem.","address":"Kpg. Abdul. Muis No. 524, Gorontalo 22409, Papua","is_active":null,"geometry":{"type":"Point","coordinates":[-19.141066,7.019069]},"photo_url":null},{"id":"01kz7yrzxch1np0a5ntejtqanq","name":"CV Marbun Tbk","slug":"cv-marbun-tbk-xubco","category":"umkm","description":"Et facilis quos ut veniam nobis.","address":"Psr. Samanhudi No. 580, Banjar 81716, Maluku","is_active":null,"geometry":{"type":"Point","coordinates":[-136.335024,28.419444]},"photo_url":null},{"id":"01kz7yrzxch1np0a5ntejtqanr","name":"Yayasan Mandasari","slug":"yayasan-mandasari-s3eoy","category":"umkm","description":"Et aut labore facere possimus commodi animi id.","address":"Kpg. Batako No. 762, Bitung 89708, Jabar","is_active":null,"geometry":{"type":"Point","coordinates":[50.079592,83.504477]},"photo_url":null},{"id":"01kz7yrzxdzx3xrag0a0jdd7qm","name":"PD Kuswandari Tbk","slug":"pd-kuswandari-tbk-qq3wf","category":"umkm","description":"Magni deserunt maiores omnis ut natus earum qui.","address":"Dk. Wahidin Sudirohusodo No. 99, Ternate 19115, Jabar","is_active":null,"geometry":{"type":"Point","coordinates":[-51.539824,34.541273]},"photo_url":null},{"id":"01kz7yrzxdzx3xrag0a0jdd7qn","name":"PT Melani Lailasari (Persero) Tbk","slug":"pt-melani-lailasari-persero-tbk-e2nhp","category":"umkm","description":"Omnis inventore suscipit quia ut aperiam consequatur.","address":"Gg. Sukabumi No. 950, Sorong 95982, Gorontalo","is_active":null,"geometry":{"type":"Point","coordinates":[165.073436,-68.383226]},"photo_url":null}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -395,14 +395,14 @@ endpoints:
         name: slug
         description: 'The slug of the location.'
         required: true
-        example: architecto
+        example: 01kz7yrzwymrmgydmx9wpx3vnd
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      slug: architecto
+      slug: 01kz7yrzwymrmgydmx9wpx3vnd
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -594,6 +594,46 @@ endpoints:
     custom: []
     httpMethods:
       - GET
+    uri: api/v1/demographics/stats
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"success":true,"message":"Statistik demografi berhasil diambil.","data":{"total":206,"gender":{"male_percentage":46.1,"female_percentage":53.9},"age":{"youth_percentage":34,"productive_percentage":66,"elderly_percentage":0},"last_updated":"2026-08-10T13:10:13+07:00"}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
     uri: 'api/v1/demographics/families/{family}'
     metadata:
       custom: []
@@ -614,14 +654,14 @@ endpoints:
         name: family
         description: 'The family.'
         required: true
-        example: architecto
+        example: 01kz7yrzh6nmp08x3hawa19n0b
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      family: architecto
+      family: 01kz7yrzh6nmp08x3hawa19n0b
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -630,8 +670,232 @@ endpoints:
     responses:
       -
         custom: []
-        status: 404
-        content: '{"success":false,"message":"Data Kartu Keluarga tidak ditemukan."}'
+        status: 200
+        content: '{"success":true,"data":{"id":"01kz7yrzh6nmp08x3hawa19n0b","kk_number":"321301******7679","head_of_family_name":"Karsa Firmansyah","address":"Dk. Cihampelas No. 970","rt":"073","rw":"018","village":"Cikaum Timur","district":"Cikaum","city":"Subang","residents":[{"id":"01kz7yrzhxzqwmexqn214eg1yq","family_id":"01kz7yrzh6nmp08x3hawa19n0b","nik":"321301******6109","name":"Karsa Firmansyah","place_of_birth":"Gorontalo","date_of_birth":"1973-01-20","gender":"LAKI-LAKI","family_relation_status":"KEPALA KELUARGA","religion":"ISLAM","education_level":"SMA\/SEDERAJAT","profession":"WIRASWASTA","blood_type":"O","marital_status":"KAWIN","is_active":true,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzj3v59dhajmc2n2k3cb","family_id":"01kz7yrzh6nmp08x3hawa19n0b","nik":"321301******3466","name":"Cager Sinaga M.M.","place_of_birth":"Tangerang","date_of_birth":"1981-08-14","gender":"PEREMPUAN","family_relation_status":"ISTRI","religion":"ISLAM","education_level":"SMA\/SEDERAJAT","profession":"WIRASWASTA","blood_type":"A","marital_status":"KAWIN","is_active":true,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzj4hqrf8ep0mazztf5p","family_id":"01kz7yrzh6nmp08x3hawa19n0b","nik":"321301******5547","name":"Bahuwirya Harimurti Permadi S.I.Kom","place_of_birth":"Makassar","date_of_birth":"2007-02-07","gender":"PEREMPUAN","family_relation_status":"ANAK","religion":"ISLAM","education_level":"SMA\/SEDERAJAT","profession":"WIRASWASTA","blood_type":"B","marital_status":"BELUM KAWIN","is_active":true,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzj5m4zyztzfspwq16ys","family_id":"01kz7yrzh6nmp08x3hawa19n0b","nik":"321301******5361","name":"Narji Setiawan","place_of_birth":"Prabumulih","date_of_birth":"2007-02-07","gender":"PEREMPUAN","family_relation_status":"ANAK","religion":"ISLAM","education_level":"SMA\/SEDERAJAT","profession":"WIRASWASTA","blood_type":"AB","marital_status":"BELUM KAWIN","is_active":true,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzj689r3e39hrwy1mwpm","family_id":"01kz7yrzh6nmp08x3hawa19n0b","nik":"321301******0921","name":"Adikara Hadi Nugroho S.IP","place_of_birth":"Tomohon","date_of_birth":"2007-02-07","gender":"PEREMPUAN","family_relation_status":"ANAK","religion":"ISLAM","education_level":"SMA\/SEDERAJAT","profession":"WIRASWASTA","blood_type":"O","marital_status":"BELUM KAWIN","is_active":true,"created_at":"2026-08-05T10:16:50+07:00"}],"created_at":"2026-08-05T10:16:50+07:00"}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/v1/products
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"data":[{"id":"01kzjrwwm3f5q2tbexc5rjjxba","name":"Ikan Mahseer Emas","slug":"ikan-mahseer-emas","category":"kuliner","category_label":"Makanan & Minuman","description":"Ikan mahseer yang sangat segar","owner_name":"Tasnim Salahudin","phone_number":"82119314703","price":"45000.00","formatted_price":"Rp 45.000","is_active":true,"image_url":"http:\/\/localhost:8000\/storage\/6\/01KZJSJRW80M27C8VZ6E3SRR43.png","created_at":"2026-08-09T15:05:45+07:00"},{"id":"01kz7yrzyf6c5vybnkb9txafwv","name":"Dolor Vel Totam","slug":"dolor-vel-totam-c0bu","category":"jasa","category_label":"Jasa & Lainnya","description":"Dolor ducimus adipisci laboriosam est rerum non. Architecto repudiandae dolore est molestias quis omnis.","owner_name":"Gilda Haryanti","phone_number":"(+62) 868 6923 640","price":"71031.00","formatted_price":"Rp 71.031","is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzyhwk4abj944t17e92e","name":"Voluptatibus Rerum Dolor","slug":"voluptatibus-rerum-dolor-sCgX","category":"kuliner","category_label":"Makanan & Minuman","description":"Soluta excepturi sit dolor laborum at. Adipisci omnis impedit blanditiis sint quo.","owner_name":"Zalindra Pudjiastuti","phone_number":"(+62) 847 190 835","price":"230008.00","formatted_price":"Rp 230.008","is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzygy8y0708czqyf8kbr","name":"Officiis Ab Aut","slug":"officiis-ab-aut-wMvQ","category":"pertanian","category_label":"Pertanian & Peternakan","description":"Modi velit labore omnis sint necessitatibus laboriosam aliquid. Nam aut quidem quidem nobis excepturi in. Quas possimus molestiae dolor non soluta.","owner_name":"Xanana Hamzah Haryanto","phone_number":"0833 7230 2623","price":"398010.00","formatted_price":"Rp 398.010","is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzygy8y0708czqyf8kbs","name":"Alias Hic Qui","slug":"alias-hic-qui-jHU2","category":"kerajinan","category_label":"Kerajinan Tangan","description":"Maiores vel aperiam et dolorum ullam. Doloribus voluptas illum asperiores impedit quod voluptas pariatur. Autem quis unde sed.","owner_name":"Gandi Hidayat S.Sos","phone_number":"(+62) 555 0711 810","price":"60232.00","formatted_price":"Rp 60.232","is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzyhwk4abj944t17e92d","name":"Amet Sint Qui","slug":"amet-sint-qui-vNYK","category":"pertanian","category_label":"Pertanian & Peternakan","description":"Incidunt a quod rerum aperiam voluptatem. A quaerat voluptatem est qui.","owner_name":"Martaka Jinawi Waskita","phone_number":"0706 5305 5028","price":"278482.00","formatted_price":"Rp 278.482","is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzyf6c5vybnkb9txafww","name":"Corporis Necessitatibus Aspernatur","slug":"corporis-necessitatibus-aspernatur-66uW","category":"kuliner","category_label":"Makanan & Minuman","description":"Perspiciatis non iure fuga cupiditate modi officia qui. Voluptatem quo sint voluptatem optio iusto. Nam enim repellendus debitis beatae est commodi quia. Voluptatem pariatur dolor eos perspiciatis.","owner_name":"Carub Prakasa","phone_number":"0818 6611 6957","price":"72113.00","formatted_price":"Rp 72.113","is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzyhwk4abj944t17e92f","name":"Rerum Iste Voluptas","slug":"rerum-iste-voluptas-OedR","category":"pertanian","category_label":"Pertanian & Peternakan","description":"Voluptas expedita error rerum repudiandae earum quo aut. Repudiandae velit magni culpa sed voluptatem. Et eum et ut voluptatem nemo.","owner_name":"Ganda Bambang Kusumo S.Psi","phone_number":"0935 5350 429","price":"308556.00","formatted_price":"Rp 308.556","is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzyj7tfad9g99r47tv4r","name":"Quasi Occaecati Deleniti","slug":"quasi-occaecati-deleniti-Sqzw","category":"kuliner","category_label":"Makanan & Minuman","description":"Ipsam aut velit sint dolores et ea. Culpa eos error minus accusantium voluptas rerum eum sint. Ducimus quia iusto ut aperiam.","owner_name":"Ajeng Agustina","phone_number":"(+62) 479 3926 5801","price":"376828.00","formatted_price":"Rp 376.828","is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzyj7tfad9g99r47tv4s","name":"Qui Dolor Deleniti","slug":"qui-dolor-deleniti-NDPY","category":"pertanian","category_label":"Pertanian & Peternakan","description":"Nemo enim dolorum dignissimos. Quasi consequatur voluptatem dolorem omnis dolorem. Non est nobis sed excepturi rerum est fugiat. Ea tempore inventore qui architecto modi quam.","owner_name":"Reza Luluh Sihombing S.Kom","phone_number":"(+62) 656 5938 7690","price":"166911.00","formatted_price":"Rp 166.911","is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzyj7tfad9g99r47tv4t","name":"Facilis Quia Recusandae","slug":"facilis-quia-recusandae-0v9V","category":"kerajinan","category_label":"Kerajinan Tangan","description":"Atque veniam reprehenderit quae dolorem sit. Labore dolorem dolor eos ut quaerat. Eum deserunt temporibus nisi velit impedit quia natus.","owner_name":"Gawati Padmasari","phone_number":"(+62) 688 0238 974","price":"415097.00","formatted_price":"Rp 415.097","is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzyf6c5vybnkb9txafwt","name":"Qui Impedit Omnis","slug":"qui-impedit-omnis-60bR","category":"pertanian","category_label":"Pertanian & Peternakan","description":"Non quia rerum deserunt sunt sit. Omnis in dolor sequi amet sed voluptatibus. Nostrum consequatur vel amet similique. Eum et fugit odit aut dolores non nostrum.","owner_name":"Wira Suryono M.Farm","phone_number":"0450 1101 6223","price":"135161.00","formatted_price":"Rp 135.161","is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"}],"links":{"first":"http:\/\/localhost:8000\/api\/v1\/products?page=1","last":"http:\/\/localhost:8000\/api\/v1\/products?page=3","prev":null,"next":"http:\/\/localhost:8000\/api\/v1\/products?page=2"},"meta":{"current_page":1,"from":1,"last_page":3,"links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/v1\/products?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/v1\/products?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/v1\/products?page=3","label":"3","page":3,"active":false},{"url":"http:\/\/localhost:8000\/api\/v1\/products?page=2","label":"Next &raquo;","page":2,"active":false}],"path":"http:\/\/localhost:8000\/api\/v1\/products","per_page":12,"to":12,"total":26}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/v1/products/{product}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      product:
+        custom: []
+        name: product
+        description: 'The product.'
+        required: true
+        example: 01kz7yrzyarm3e21jnvvfvgzer
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      product: 01kz7yrzyarm3e21jnvvfvgzer
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"success":true,"data":{"id":"01kz7yrzyarm3e21jnvvfvgzer","name":"Aut Iusto Recusandae","slug":"aut-iusto-recusandae-66uy","category":"pertanian","category_label":"Pertanian & Peternakan","description":"Tenetur temporibus ducimus quo enim. Neque incidunt sequi temporibus ab ut. Voluptates et dolores ipsa vel aspernatur ut. Minus quia ex et reprehenderit ea sapiente. Iure vitae distinctio repudiandae soluta voluptatem consequatur.","owner_name":"Jessica Nurdiyanti","phone_number":"0406 5219 310","price":"486854.00","formatted_price":"Rp 486.854","is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/v1/galleries
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"data":[{"id":"01kz7yrzz2x20ye1gcv56j8bth","title":"Qui aperiam architecto beatae molestiae est dolorem.","category":"pembangunan","category_label":"Pembangunan","year":2025,"is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzz4vaty7j5kd66g48g2","title":"Et nobis error molestias vel.","category":"pembangunan","category_label":"Pembangunan","year":2021,"is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzyvbm3fr3pq350dsxcp","title":"Qui dolores fuga et delectus.","category":"pembangunan","category_label":"Pembangunan","year":2020,"is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzz30bsvkrbz2sygz32n","title":"Molestiae ducimus voluptatem suscipit harum.","category":"kegiatan","category_label":"Kegiatan Warga","year":2020,"is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzz9ajnnvatrf1vckctg","title":"Est eum eos id error commodi omnis.","category":"budaya","category_label":"Seni & Budaya","year":2015,"is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzz7w303wm5vpe93nwv7","title":"Debitis odio id quisquam unde voluptas.","category":"budaya","category_label":"Seni & Budaya","year":2015,"is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzz2x20ye1gcv56j8btg","title":"Corrupti voluptatibus voluptatem consequuntur earum.","category":"alam","category_label":"Alam & Potensi","year":2015,"is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzz2x20ye1gcv56j8btf","title":"Nam dolor qui perferendis quis fuga commodi.","category":"kegiatan","category_label":"Kegiatan Warga","year":2013,"is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzzaw1jcfddd2v8020yf","title":"Velit accusamus corrupti sint aperiam.","category":"kegiatan","category_label":"Kegiatan Warga","year":2013,"is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzz7w303wm5vpe93nwv8","title":"Veritatis molestiae ducimus incidunt aut.","category":"alam","category_label":"Alam & Potensi","year":2010,"is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzzdcjjrmhfs2a71c6hh","title":"Illo voluptate illum iste rem.","category":"pembangunan","category_label":"Pembangunan","year":2009,"is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"},{"id":"01kz7yrzzaw1jcfddd2v8020yg","title":"Praesentium pariatur aliquid vel quisquam.","category":"alam","category_label":"Alam & Potensi","year":2008,"is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"}],"links":{"first":"http:\/\/localhost:8000\/api\/v1\/galleries?page=1","last":"http:\/\/localhost:8000\/api\/v1\/galleries?page=3","prev":null,"next":"http:\/\/localhost:8000\/api\/v1\/galleries?page=2"},"meta":{"current_page":1,"from":1,"last_page":3,"links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost:8000\/api\/v1\/galleries?page=1","label":"1","page":1,"active":true},{"url":"http:\/\/localhost:8000\/api\/v1\/galleries?page=2","label":"2","page":2,"active":false},{"url":"http:\/\/localhost:8000\/api\/v1\/galleries?page=3","label":"3","page":3,"active":false},{"url":"http:\/\/localhost:8000\/api\/v1\/galleries?page=2","label":"Next &raquo;","page":2,"active":false}],"path":"http:\/\/localhost:8000\/api\/v1\/galleries","per_page":12,"to":12,"total":30}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/v1/galleries/years
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"success":true,"message":"Daftar tahun galeri berhasil diambil","data":[2025,2021,2020,2015,2013,2010,2009,2008,2007,2003,2001,1999,1996,1995,1994,1993,1987,1985,1981,1979,1977,1976,1972,1971,1970]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/v1/galleries/{gallery}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      gallery:
+        custom: []
+        name: gallery
+        description: 'The gallery.'
+        required: true
+        example: 01kz7yrzyvbm3fr3pq350dsxcp
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      gallery: 01kz7yrzyvbm3fr3pq350dsxcp
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"success":true,"data":{"id":"01kz7yrzyvbm3fr3pq350dsxcp","title":"Qui dolores fuga et delectus.","category":"pembangunan","category_label":"Pembangunan","year":2020,"is_active":true,"image_url":null,"created_at":"2026-08-05T10:16:50+07:00"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -703,7 +967,7 @@ endpoints:
         name: is_active
         description: ''
         required: false
-        example: false
+        example: true
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -713,7 +977,7 @@ endpoints:
       name: b
       slug: 'n'
       description: 'Eius et animi quos velit et.'
-      is_active: false
+      is_active: true
     fileParameters: []
     responses: []
     responseFields: []
@@ -794,7 +1058,7 @@ endpoints:
         name: is_active
         description: ''
         required: false
-        example: false
+        example: true
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -804,7 +1068,7 @@ endpoints:
       name: b
       slug: 'n'
       description: 'Eius et animi quos velit et.'
-      is_active: false
+      is_active: true
     fileParameters: []
     responses: []
     responseFields: []
@@ -958,14 +1222,14 @@ endpoints:
         name: organization
         description: 'The organization.'
         required: true
-        example: architecto
+        example: 01kz7yrzs0fxcac1vxk1ej87ev
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      organization: architecto
+      organization: 01kz7yrzs0fxcac1vxk1ej87ev
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -1049,14 +1313,14 @@ endpoints:
         name: organization
         description: 'The organization.'
         required: true
-        example: architecto
+        example: 01kz7yrzs0fxcac1vxk1ej87ev
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      organization: architecto
+      organization: 01kz7yrzs0fxcac1vxk1ej87ev
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1084,7 +1348,7 @@ endpoints:
       authenticated: false
       deprecated: false
     headers:
-      Content-Type: application/json
+      Content-Type: multipart/form-data
       Accept: application/json
     urlParameters: []
     cleanUrlParameters: []
@@ -1168,6 +1432,17 @@ endpoints:
         exampleWasSpecified: false
         nullable: true
         deprecated: false
+      photo:
+        custom: []
+        name: photo
+        description: 'Must be an image. Must not be greater than 2048 kilobytes.'
+        required: false
+        example: null
+        type: file
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
     cleanBodyParameters:
       organization_id: architecto
       name: 'n'
@@ -1176,7 +1451,8 @@ endpoints:
       bio: architecto
       sort_order: 16
       is_active: false
-    fileParameters: []
+    fileParameters:
+      photo: null
     responses: []
     responseFields: []
     auth: []
@@ -1199,7 +1475,7 @@ endpoints:
       authenticated: false
       deprecated: false
     headers:
-      Content-Type: application/json
+      Content-Type: multipart/form-data
       Accept: application/json
     urlParameters:
       official:
@@ -1207,14 +1483,14 @@ endpoints:
         name: official
         description: 'The official.'
         required: true
-        example: architecto
+        example: 01kz7yrzvhpa131jcs54mh0f8g
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      official: architecto
+      official: 01kz7yrzvhpa131jcs54mh0f8g
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -1289,8 +1565,19 @@ endpoints:
         name: is_active
         description: ''
         required: false
-        example: false
+        example: true
         type: boolean
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      photo:
+        custom: []
+        name: photo
+        description: 'Must be an image. Must not be greater than 2048 kilobytes.'
+        required: false
+        example: null
+        type: file
         enumValues: []
         exampleWasSpecified: false
         nullable: true
@@ -1302,8 +1589,9 @@ endpoints:
       nip_nik: z
       bio: architecto
       sort_order: 16
-      is_active: false
-    fileParameters: []
+      is_active: true
+    fileParameters:
+      photo: null
     responses: []
     responseFields: []
     auth: []
@@ -1334,14 +1622,14 @@ endpoints:
         name: official
         description: 'The official.'
         required: true
-        example: architecto
+        example: 01kz7yrzvhpa131jcs54mh0f8g
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      official: architecto
+      official: 01kz7yrzvhpa131jcs54mh0f8g
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1436,7 +1724,7 @@ endpoints:
         name: status
         description: ''
         required: false
-        example: published
+        example: archived
         type: string
         enumValues:
           - draft
@@ -1461,7 +1749,7 @@ endpoints:
         name: published_at
         description: 'Must be a valid date.'
         required: false
-        example: '2026-07-31T09:05:10'
+        example: '2026-08-10T14:29:47'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -1484,9 +1772,9 @@ endpoints:
       slug: g
       excerpt: z
       content: architecto
-      status: published
+      status: archived
       is_highlight: true
-      published_at: '2026-07-31T09:05:10'
+      published_at: '2026-08-10T14:29:47'
     fileParameters:
       cover_image: null
     responses: []
@@ -1519,14 +1807,14 @@ endpoints:
         name: post
         description: 'The post.'
         required: true
-        example: architecto
+        example: 01kz7yrzw30pgr45w89qx3rq5b
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      post: architecto
+      post: 01kz7yrzw30pgr45w89qx3rq5b
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -1590,7 +1878,7 @@ endpoints:
         name: status
         description: ''
         required: false
-        example: draft
+        example: published
         type: string
         enumValues:
           - draft
@@ -1615,7 +1903,7 @@ endpoints:
         name: published_at
         description: 'Must be a valid date.'
         required: false
-        example: '2026-07-31T09:05:10'
+        example: '2026-08-10T14:29:47'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -1638,9 +1926,9 @@ endpoints:
       slug: g
       excerpt: z
       content: architecto
-      status: draft
+      status: published
       is_highlight: false
-      published_at: '2026-07-31T09:05:10'
+      published_at: '2026-08-10T14:29:47'
     fileParameters:
       cover_image: null
     responses: []
@@ -1673,14 +1961,14 @@ endpoints:
         name: post
         description: 'The post.'
         required: true
-        example: architecto
+        example: 01kz7yrzw30pgr45w89qx3rq5b
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      post: architecto
+      post: 01kz7yrzw30pgr45w89qx3rq5b
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1731,7 +2019,7 @@ endpoints:
         name: category
         description: ''
         required: true
-        example: kantor_desa
+        example: ibadah
         type: string
         enumValues:
           - umkm
@@ -1792,7 +2080,7 @@ endpoints:
         name: is_active
         description: ''
         required: false
-        example: false
+        example: true
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -1811,12 +2099,12 @@ endpoints:
         deprecated: false
     cleanBodyParameters:
       name: b
-      category: kantor_desa
+      category: ibadah
       description: 'Eius et animi quos velit et.'
       address: v
       latitude: -89
       longitude: -179
-      is_active: false
+      is_active: true
     fileParameters:
       image: null
     responses: []
@@ -1849,14 +2137,14 @@ endpoints:
         name: location
         description: 'The location.'
         required: true
-        example: architecto
+        example: 01kz7yrzwymrmgydmx9wpx3vnd
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      location: architecto
+      location: 01kz7yrzwymrmgydmx9wpx3vnd
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -1876,7 +2164,7 @@ endpoints:
         name: category
         description: ''
         required: false
-        example: rawan_bencana
+        example: ibadah
         type: string
         enumValues:
           - umkm
@@ -1937,7 +2225,7 @@ endpoints:
         name: is_active
         description: ''
         required: false
-        example: false
+        example: true
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -1956,12 +2244,12 @@ endpoints:
         deprecated: false
     cleanBodyParameters:
       name: b
-      category: rawan_bencana
+      category: ibadah
       description: 'Eius et animi quos velit et.'
       address: v
       latitude: -89
       longitude: -179
-      is_active: false
+      is_active: true
     fileParameters:
       image: null
     responses: []
@@ -1994,14 +2282,14 @@ endpoints:
         name: location
         description: 'The location.'
         required: true
-        example: architecto
+        example: 01kz7yrzwymrmgydmx9wpx3vnd
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      location: architecto
+      location: 01kz7yrzwymrmgydmx9wpx3vnd
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -2077,14 +2365,14 @@ endpoints:
         name: complaint
         description: 'The complaint.'
         required: true
-        example: architecto
+        example: 01kz7yrzxj9gmdsm0xhkv2x818
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      complaint: architecto
+      complaint: 01kz7yrzxj9gmdsm0xhkv2x818
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -2093,7 +2381,7 @@ endpoints:
         name: status
         description: ''
         required: true
-        example: resolved
+        example: pending
         type: string
         enumValues:
           - pending
@@ -2104,7 +2392,7 @@ endpoints:
         nullable: false
         deprecated: false
     cleanBodyParameters:
-      status: resolved
+      status: pending
     fileParameters: []
     responses: []
     responseFields: []
@@ -2294,7 +2582,7 @@ endpoints:
         name: head_resident.date_of_birth
         description: 'Must be a valid date.'
         required: true
-        example: '2026-07-31T09:05:10'
+        example: '2026-08-10T14:29:47'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -2305,7 +2593,7 @@ endpoints:
         name: head_resident.gender
         description: ''
         required: true
-        example: PEREMPUAN
+        example: LAKI-LAKI
         type: string
         enumValues:
           - LAKI-LAKI
@@ -2350,10 +2638,596 @@ endpoints:
         nik: bngzmiyvdljnikhw
         name: a
         place_of_birth: 'y'
-        date_of_birth: '2026-07-31T09:05:10'
-        gender: PEREMPUAN
+        date_of_birth: '2026-08-10T14:29:47'
+        gender: LAKI-LAKI
         religion: architecto
         marital_status: architecto
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/v1/products
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: multipart/form-data
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        custom: []
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: b
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      slug:
+        custom: []
+        name: slug
+        description: 'Must not be greater than 255 characters.'
+        required: false
+        example: 'n'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      category:
+        custom: []
+        name: category
+        description: ''
+        required: true
+        example: jasa
+        type: string
+        enumValues:
+          - kuliner
+          - kerajinan
+          - pertanian
+          - jasa
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      description:
+        custom: []
+        name: description
+        description: ''
+        required: false
+        example: 'Eius et animi quos velit et.'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      owner_name:
+        custom: []
+        name: owner_name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: v
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      phone_number:
+        custom: []
+        name: phone_number
+        description: 'Must not be greater than 20 characters.'
+        required: false
+        example: dljnikhwaykcmyuw
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      price:
+        custom: []
+        name: price
+        description: 'Must be at least 0.'
+        required: false
+        example: 67
+        type: number
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      is_active:
+        custom: []
+        name: is_active
+        description: ''
+        required: false
+        example: true
+        type: boolean
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      image:
+        custom: []
+        name: image
+        description: 'Must be an image. Must not be greater than 5120 kilobytes.'
+        required: false
+        example: null
+        type: file
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      name: b
+      slug: 'n'
+      category: jasa
+      description: 'Eius et animi quos velit et.'
+      owner_name: v
+      phone_number: dljnikhwaykcmyuw
+      price: 67
+      is_active: true
+    fileParameters:
+      image: null
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+    uri: 'api/v1/products/{product}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: multipart/form-data
+      Accept: application/json
+    urlParameters:
+      product:
+        custom: []
+        name: product
+        description: 'The product.'
+        required: true
+        example: 01kz7yrzyarm3e21jnvvfvgzer
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      product: 01kz7yrzyarm3e21jnvvfvgzer
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        custom: []
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: false
+        example: b
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      slug:
+        custom: []
+        name: slug
+        description: 'Must not be greater than 255 characters.'
+        required: false
+        example: 'n'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      category:
+        custom: []
+        name: category
+        description: ''
+        required: false
+        example: kerajinan
+        type: string
+        enumValues:
+          - kuliner
+          - kerajinan
+          - pertanian
+          - jasa
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      description:
+        custom: []
+        name: description
+        description: ''
+        required: false
+        example: 'Eius et animi quos velit et.'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      owner_name:
+        custom: []
+        name: owner_name
+        description: 'Must not be greater than 255 characters.'
+        required: false
+        example: v
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      phone_number:
+        custom: []
+        name: phone_number
+        description: 'Must not be greater than 20 characters.'
+        required: false
+        example: dljnikhwaykcmyuw
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      price:
+        custom: []
+        name: price
+        description: 'Must be at least 0.'
+        required: false
+        example: 67
+        type: number
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      is_active:
+        custom: []
+        name: is_active
+        description: ''
+        required: false
+        example: true
+        type: boolean
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      image:
+        custom: []
+        name: image
+        description: 'Must be an image. Must not be greater than 5120 kilobytes.'
+        required: false
+        example: null
+        type: file
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      name: b
+      slug: 'n'
+      category: kerajinan
+      description: 'Eius et animi quos velit et.'
+      owner_name: v
+      phone_number: dljnikhwaykcmyuw
+      price: 67
+      is_active: true
+    fileParameters:
+      image: null
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - DELETE
+    uri: 'api/v1/products/{product}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      product:
+        custom: []
+        name: product
+        description: 'The product.'
+        required: true
+        example: 01kz7yrzyarm3e21jnvvfvgzer
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      product: 01kz7yrzyarm3e21jnvvfvgzer
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/v1/galleries
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: multipart/form-data
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      title:
+        custom: []
+        name: title
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: b
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      category:
+        custom: []
+        name: category
+        description: ''
+        required: true
+        example: kegiatan
+        type: string
+        enumValues:
+          - kegiatan
+          - pembangunan
+          - alam
+          - budaya
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      year:
+        custom: []
+        name: year
+        description: 'Must be at least 2000. Must not be greater than 2099.'
+        required: true
+        example: 22
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      is_active:
+        custom: []
+        name: is_active
+        description: ''
+        required: false
+        example: true
+        type: boolean
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      image:
+        custom: []
+        name: image
+        description: 'Must be an image. Must not be greater than 5120 kilobytes.'
+        required: true
+        example: null
+        type: file
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      title: b
+      category: kegiatan
+      year: 22
+      is_active: true
+    fileParameters:
+      image: null
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+    uri: 'api/v1/galleries/{gallery}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: multipart/form-data
+      Accept: application/json
+    urlParameters:
+      gallery:
+        custom: []
+        name: gallery
+        description: 'The gallery.'
+        required: true
+        example: 01kz7yrzyvbm3fr3pq350dsxcp
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      gallery: 01kz7yrzyvbm3fr3pq350dsxcp
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      title:
+        custom: []
+        name: title
+        description: 'Must not be greater than 255 characters.'
+        required: false
+        example: b
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      category:
+        custom: []
+        name: category
+        description: ''
+        required: false
+        example: pembangunan
+        type: string
+        enumValues:
+          - kegiatan
+          - pembangunan
+          - alam
+          - budaya
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      year:
+        custom: []
+        name: year
+        description: 'Must be at least 2000. Must not be greater than 2099.'
+        required: false
+        example: 22
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      is_active:
+        custom: []
+        name: is_active
+        description: ''
+        required: false
+        example: false
+        type: boolean
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      image:
+        custom: []
+        name: image
+        description: 'Must be an image. Must not be greater than 5120 kilobytes.'
+        required: false
+        example: null
+        type: file
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      title: b
+      category: pembangunan
+      year: 22
+      is_active: false
+    fileParameters:
+      image: null
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - DELETE
+    uri: 'api/v1/galleries/{gallery}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      gallery:
+        custom: []
+        name: gallery
+        description: 'The gallery.'
+        required: true
+        example: 01kz7yrzyvbm3fr3pq350dsxcp
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      gallery: 01kz7yrzyvbm3fr3pq350dsxcp
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
     fileParameters: []
     responses: []
     responseFields: []
